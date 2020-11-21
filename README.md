@@ -15,13 +15,17 @@ Main requirements:
 # UX
 ## Main aims
 
-1. To introduce suitable website for local takeaway restaurant to a new potentional customers and stand out from competitors by creating a website with a proffesional look.
+1. Strategy - to introduce suitable website for local takeaway restaurant to attract potentional customers and stand out from competitors by creating a website with a proffesional look. This will allow company to grow.
 
-1. To create a functional and user friendly website with easy navigation so customers can find information they need. 
+1. Scope - to include restaurant menu, contact formular and current offers. Order online feature will be added later.
 
-1. To implement responsive design so the website can be viewed on device with smaller screen size.
+1. Structure - to fulfil information architecture and to use HTML semantic elements so the search engines can find relevant informations. Links, pictures and other functions to be logically grouped.
 
-1. To fulfil information architecture and to use HTML semantic elements so the search engines can find relevant informations.
+1. Skeleton - To create a functional and user friendly navbar and footer with easy navigation so customers can find information they need. 
+
+1. Surface - to implement responsive design with appropriate colors and fonts so the website can be viewed on device with smaller screen size.
+
+
 
 ## User stories
 
@@ -29,8 +33,18 @@ Main requirements:
 
 1. As a business owner I would like to be accesible throught my website so the customer can contact me and share their ideas or feedback.
 
-1. I am a customer who usually access web on mobile device so attractive layout is very important to me.
+1. I am a customer who usually access web on mobile device so attractive layout on a small screen is very important to me.
 
 1. I am a customer who compares prices with other restaurants so I am always looking for a menu page.
 
 1. I am a culinary student looking for a part time position in a restaurant and I'd like to know how can I apply here.
+
+## Design process
+
+Following the user stories I decided to conduct a research on a similar websites to identify suitable architecture and simple navigation for my project. This resulted in having these four pages: 'Home', 'About us', 'Menu', 'Contact Us'.
+
+The 'Home' page content needs to be simple for quick loading and containg nice hero picture making customer stay here and browse further. As I was open to any ideas I searched through dozens of pictures and choosed picture with [Burger&Chips](https://pxhere.com/en/photo/1418586).
+
+One of my personal challenges was to learn how to make design with wireframing programmes. I came accross [Balsamiq Wireframes](https://balsamiq.com/wireframes/) but I didn't like its sketch based approach so I sticked with [Figma](http://www.figma.com). Instant results in Figma are realistic what helped me while selecting ideal color scheme for my project.
+
+Throughout various stages of my project development I changed the company name, logo, hero image and content of pages but I tried to stick with initial purpose, main aims and user stories.
