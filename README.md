@@ -48,3 +48,14 @@ The 'Home' page content needs to be simple for quick loading and containg nice h
 One of my personal challenges was to learn how to make design with wireframing programmes. I came accross [Balsamiq Wireframes](https://balsamiq.com/wireframes/) but I didn't like its sketch based approach so I sticked with [Figma](http://www.figma.com). Instant results in Figma are realistic what helped me while selecting ideal color scheme for my project.
 
 Throughout various stages of my project development I changed the company name, logo, hero image and content of pages but I tried to stick with initial purpose, main aims and user stories.
+
+# Figma Wireframes
+## Desktop
+![Martin's on Desktop](./img/Figma-desktop.jpg "Martin's on Desktop")
+
+## Tablet
+![Martin's on Tablet](./img/figma-tablet.jpg "Martin's on Tablet")
+
+## Mobile
+![Martin's on Mobile](./img/figma-mobile.jpg "Martin's on Mobile")
+
