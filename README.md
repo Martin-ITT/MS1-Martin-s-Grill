@@ -45,7 +45,7 @@ Following the user stories I decided to conduct a research on a similar websites
 
 The 'Home' page content needs to be simple for quick loading and containg nice hero picture making customer stay here and browse further. As I was open to any ideas I searched through dozens of pictures and choosed picture with [Burger&Chips](https://pxhere.com/en/photo/1418586).
 
-One of my personal challenges was to learn how to make design with wireframing programmes. I came accross [Balsamiq Wireframes](https://balsamiq.com/wireframes/) but I didn't like its sketch based approach so I sticked with [Figma](http://www.figma.com). Instant results in Figma are realistic what helped me while selecting ideal color scheme for my project.
+New thing to learn for me was making design with wireframing programmes. I came accross [Balsamiq Wireframes](https://balsamiq.com/wireframes/) but I didn't like its sketch based approach so I sticked with [Figma](http://www.figma.com). Instant results in Figma are realistic what helped me while selecting ideal color scheme for my project.
 
 Throughout various stages of my project development I changed the company name, logo, hero image and content of pages but I tried to stick with initial purpose, main aims and user stories.
 
