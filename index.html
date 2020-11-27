@@ -51,44 +51,46 @@
     </nav>
       
   
-    <section>
-        <div id="my-body">
-            <div class="blue-class">
-                <div class="red-class">
-                    <h2>hungry?</h2>
-                    <h1>Welcome to Martin's Grill</h1>
-                </div>
-                <div class="red-class">
-                	<button class="btn btn-danger">Subscribe</button>
-                </div>   
-            </div>  
+    <section id="my-body">
+        <div class="container">
+            
+            <div id="welcome-text">
+                <h4>hungry?</h4>
+                <h2>Welcome <br>to<br> Martin's Grill</h2>
+                <button class="btn btn-danger" id="button-order">order now</button>
+            </div>   
+            
         </div>
-
     </section> 
       
     <footer>
         <!-- footer properties-->
-        <div class="page-footer text-center text-light bg-light">
-            
-                <div class="row align-items-center">
+        <div class="page-footer text-center text-dark bg-dark">
+            <div class="container">
+                <div class="row align-items-center pt-2">
                     <!-- sm to expand on screens from 576px -->
-                    <div class="col-sm"> 
-                    <button class="btn btn-light">Subscribe</button>
+                    <div class="col-md"> 
+                    <button class="btn btn-light button-subscribe">Subscribe</button>
                     </div>
                 
-                    <div class="col-sm">
-                        <a class="navbar-brand" href="index.html"><img src="./img/smallFacebook-logo-SimilarPngCom.png" width="80" height="80" alt="Facebook"></a>
-                        <a class="navbar-brand" href="index.html"><img src="./img/smallTwitter-logo-with-brush-SimilarPngCom.png" width="80" height="80" alt="Twitter"></a>
-                        <a class="navbar-brand" href="index.html"><img src="./img/smallInstagram-logo_SimilarPngCom.png" width="80" height="80" alt="Instagram"></a>
+                    <div class="col-md">
+                        <a class="navbar-brand" href="index.html"><img src="./img/smallFacebook-logo-SimilarPngCom.png" width="50" height="50" alt="Facebook"></a>
+                        <a class="navbar-brand" href="index.html"><img src="./img/smallTwitter-logo-with-brush-SimilarPngCom.png" width="50" height="50" alt="Twitter"></a>
+                        <a class="navbar-brand" href="index.html"><img src="./img/smallInstagram-logo_SimilarPngCom.png" width="50" height="50" alt="Instagram"></a>
                     </div>
                     
-                    <div class="col-sm text-md-right">
-                        <a class="dropdown-item" href="about.html">About us</a>
-                        <a class="dropdown-item" href="about.html">Careers</a>
-                        <a class="dropdown-item" href="about.html">Contact us</a>
+                    <div class="col-md text-lg-right">
+                        <a class="dropdown-item text-light" href="about.html">About us</a>
+                        <a class="dropdown-item text-light" href="about.html">Careers</a>
+                        <a class="dropdown-item text-light" href="about.html">Contact us</a>
                     </div>
                 </div>
-              
+               
+                <!-- Copyright MDB https://mdbootstrap.com/docs/jquery/navigation/footer/-->
+                    <div class="footer-copyright text-light text-center">© 2020 The Martin's Grill
+                    
+  </div>
+             </div> 
         </div>
     </footer>
 

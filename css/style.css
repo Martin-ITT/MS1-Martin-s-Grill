@@ -1,22 +1,74 @@
 #my-body {
-    height: 600px;
+    height: 650px;
     background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
     background-size: cover;
-     background-position: 30% 50%;
+    background-position: 30% 50%;
     
 }
 
-
-.blue-class {
-    height: 600px;
-    border: 3px solid blue;
-    display: flex;
-    align-items: center;
-    
-}
-.red-class {
-    border: 3px solid red;
+section #welcome-text {
+    padding-top: 170px;   
+    width: 50%;
     text-align: center;
-    flex-basis: 40%;
-  
+}
+
+section #welcome-text h2 {
+    padding-left: 10px;
+    font-size: 1.6em;
+}
+#button-order{
+    font-size: 1.em;
+}
+
+@media(min-width: 576px) {
+
+    #my-body {
+        height: 835px;
+        background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
+        background-size: cover;
+        background-position: 25% 50%;
+    }
+    section #welcome-text {
+        padding-top: 250px;   
+        width: 50%;
+        text-align: center;
+    }
+    
+    section #welcome-text h2 {
+        padding-left: 10px;
+        font-size: 2em;
+    }
+
+    section #welcome-text h4{
+        font-size: 2em;
+    }
+    #button-order{
+        font-size: 1.7em;
+    }
+}
+
+@media(min-width: 768px) {
+    #my-body {
+        height: 900px;
+        
+        background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
+        background-size: cover;
+    }
+    section #welcome-text {
+        padding-top: 250px; 
+        padding-right: 100px;  
+        width: 50%;
+        text-align: center;
+    }
+    
+    section #welcome-text h2 {
+        padding-left: 10px;
+        font-size: 4em;
+    }
+    section #welcome-text h4{
+        font-size: 4em;
+    }
+    #button-order{
+        font-size: 1.7em;
+    }
 }
