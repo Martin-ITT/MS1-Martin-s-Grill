@@ -24,18 +24,14 @@ section #welcome-text h2 {
 
     #my-body {
         height: 835px;
-        background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
-        background-size: cover;
         background-position: 25% 50%;
     }
     section #welcome-text {
         padding-top: 250px;   
-        width: 50%;
-        text-align: center;
     }
     
     section #welcome-text h2 {
-        padding-left: 10px;
+        padding-left: 0px;
         font-size: 2em;
     }
 
@@ -50,25 +46,41 @@ section #welcome-text h2 {
 @media(min-width: 768px) {
     #my-body {
         height: 900px;
-        
-        background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
-        background-size: cover;
     }
     section #welcome-text {
-        padding-top: 250px; 
         padding-right: 100px;  
-        width: 50%;
-        text-align: center;
     }
     
     section #welcome-text h2 {
         padding-left: 10px;
-        font-size: 4em;
+        font-size: 2.5em;
     }
     section #welcome-text h4{
-        font-size: 4em;
+        font-size: 2.5em;
     }
-    #button-order{
-        font-size: 1.7em;
+}
+
+@media(min-width: 992px) {
+    section #welcome-text {
+        padding-right: 100px;
+    }
+    
+    section #welcome-text h2 {
+        font-size: 3em;
+    }
+    section #welcome-text h4{
+        font-size: 3em;
+    }
+}
+@media(min-width: 1200px) {
+    section #welcome-text {
+        padding-right: 250px;
+    }
+}
+@media(min-width: 1600px) {
+    section #welcome-text {
+        padding-right: 450px;
+        width: 70%;
+        background: center center cover;
     }
 }
