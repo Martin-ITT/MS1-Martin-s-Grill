@@ -1,0 +1,22 @@
+#my-body {
+    height: 600px;
+    background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
+    background-size: cover;
+     background-position: 30% 50%;
+    
+}
+
+
+.blue-class {
+    height: 600px;
+    border: 3px solid blue;
+    display: flex;
+    align-items: center;
+    
+}
+.red-class {
+    border: 3px solid red;
+    text-align: center;
+    flex-basis: 40%;
+  
+}
