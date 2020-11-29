@@ -1,13 +1,12 @@
-#my-body {
-    height: 650px;
+/*index.html*/
+#home-body {
+    height: 600px;
     background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
     background-size: cover;
-    background-position: 30% 50%;
-    
+    background-position: 30% 50%;    
 }
-
 section #welcome-text {
-    padding-top: 170px;   
+    padding-top: 200px;   
     width: 50%;
     text-align: center;
 }
@@ -16,18 +15,30 @@ section #welcome-text h2 {
     padding-left: 10px;
     font-size: 1.6em;
 }
+section #welcome-text h4{
+    font-size: 1.2em;
+}
 #button-order{
     font-size: 1.em;
 }
-
+/*about.html*/
+#about-promise{
+height: 600px;
+    background-image: url(../img/burger\ light-pexels-dana-tentis-750073.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: .5;
+    
+}
 @media(min-width: 576px) {
 
-    #my-body {
-        height: 835px;
+    #home-body {
+        height: 700px;
         background-position: 25% 50%;
     }
     section #welcome-text {
-        padding-top: 250px;   
+        width: 40%;
+        padding-top: 220px;   
     }
     
     section #welcome-text h2 {
@@ -36,7 +47,7 @@ section #welcome-text h2 {
     }
 
     section #welcome-text h4{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     #button-order{
         font-size: 1.7em;
@@ -44,43 +55,32 @@ section #welcome-text h2 {
 }
 
 @media(min-width: 768px) {
-    #my-body {
+    #home-body {
         height: 900px;
     }
     section #welcome-text {
-        padding-right: 100px;  
+        padding-top: 280px;
+        text-align: center;  
     }
     
     section #welcome-text h2 {
-        padding-left: 10px;
+       
         font-size: 2.5em;
     }
     section #welcome-text h4{
-        font-size: 2.5em;
+        font-size: 2.0em;
     }
 }
-
-@media(min-width: 992px) {
-    section #welcome-text {
-        padding-right: 100px;
-    }
-    
+@media(min-width: 1200px){
     section #welcome-text h2 {
-        font-size: 3em;
+        font-size: 3.em;
     }
     section #welcome-text h4{
-        font-size: 3em;
+        font-size: 2.2em;
     }
 }
-@media(min-width: 1200px) {
-    section #welcome-text {
-        padding-right: 250px;
-    }
-}
-@media(min-width: 1600px) {
-    section #welcome-text {
-        padding-right: 450px;
-        width: 70%;
-        background: center center cover;
+@media(min-width: 1600px){
+    .container{
+        min-width: 90%;
     }
 }
