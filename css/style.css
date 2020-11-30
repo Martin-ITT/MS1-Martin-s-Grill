@@ -23,65 +23,89 @@ section #welcome-text h4{
 }
 /*about.html*/
 #about-promise{
-min-height: 650px;
+    min-height: 900px;
+    padding-bottom: 1em;
     background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
     background-size: cover;
     background-position: 50% 50%;
     color: black;
     text-align: center;
 }
+#about-promise h2{
+    font-size: 1.2em;
+}
 #about-promise h4{
-    font-size: 1em;
+    font-size: .8em;
 }
 #about-promise h6{
     font-size: .8em;
 }
-#about-promise .img-cont{
-    max-height: 150px;
-}
 #about-promise img{
-    border-radius: 2px ;
-    height: 150px;
+    border-radius: 5px;
+    height: 210px;
 }
 #about-promise .text-cont{
     max-height: 150px;
     max-width: 70%;
 }
 
-#our-team{
-    min-height: 650px;
-        background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
-        background-size: cover;
-        background-position: 50% 50%;
-        color: black;
-        text-align: center;
-    }
-#our-team h4{
+#about-team{
+    min-height: 930px;
+    padding-bottom: 1em;;
+    background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    color: black;
+    text-align: center;
+}
+#about-team h2{
+    font-size: 1.5em;
+}
+#about-team h4{
+    font-size: 1.2em;
+}
+#about-team h6{
     font-size: 1em;
 }
-#our-team h6{
+#about-team p{
     font-size: .8em;
-}
-#our-team p{
-    font-size: .8em;
-}
-#our-team .img-cont{
+}/*
+#about-team .img-cont{
     max-height: 150px;
-}
-#our-team img{
+}*/
+#about-team img{
     border-radius: 2px ;
     height: 150px;
 }
-#our-team .text-cont{
+#about-team .text-cont{
     max-height: 150px;
     max-width: 70%;
 }
-
+#about-gallery{
+    min-height: 300px;
+    padding-bottom: 1em;
+    background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    color: black;
+    text-align: center;
+}
+#about-gallery h2{
+    font-size: 1.5em;
+}
+#slideshow div {
+    width: 100%;
+    height: 200px;
+}
+#slideshow img {
+    max-width: 100%;
+    height: auto;
+    }
 
 
 
 @media(min-width: 576px) {
-
+    /*index.html*/
     #home-body {
         height: 700px;
         background-position: 25% 50%;
@@ -102,6 +126,14 @@ min-height: 650px;
     #button-order{
         font-size: 1.7em;
     }
+    /*about.html*/
+    #about-promise img{
+        height: 300px;
+    }
+    #about-team img{
+        height: 250px;
+    }
+    
 }
 
 @media(min-width: 768px) {
