@@ -23,13 +23,63 @@ section #welcome-text h4{
 }
 /*about.html*/
 #about-promise{
-height: 600px;
-    background-image: url(../img/burger\ light-pexels-dana-tentis-750073.jpg);
+min-height: 650px;
+    background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
     background-size: cover;
     background-position: 50% 50%;
-    opacity: .5;
-    
+    color: black;
+    text-align: center;
 }
+#about-promise h4{
+    font-size: 1em;
+}
+#about-promise h6{
+    font-size: .8em;
+}
+#about-promise .img-cont{
+    max-height: 150px;
+}
+#about-promise img{
+    border-radius: 2px ;
+    height: 150px;
+}
+#about-promise .text-cont{
+    max-height: 150px;
+    max-width: 70%;
+}
+
+#our-team{
+    min-height: 650px;
+        background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+        background-size: cover;
+        background-position: 50% 50%;
+        color: black;
+        text-align: center;
+    }
+#our-team h4{
+    font-size: 1em;
+}
+#our-team h6{
+    font-size: .8em;
+}
+#our-team p{
+    font-size: .8em;
+}
+#our-team .img-cont{
+    max-height: 150px;
+}
+#our-team img{
+    border-radius: 2px ;
+    height: 150px;
+}
+#our-team .text-cont{
+    max-height: 150px;
+    max-width: 70%;
+}
+
+
+
+
 @media(min-width: 576px) {
 
     #home-body {
