@@ -117,7 +117,32 @@
     width: 100%;
     height: 300px;
 }
-
+/*https://www.youtube.com/watch?v=OB-75ysZhfY*/
+#contact-form{
+    background-color: rgba(0,0,0,0.5);
+}
+#contact-form p{
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+#contact-form input[type=text],
+#contact-form input[type=email],
+#contact-form textarea[type=text],
+#contact-form select{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+}
+#contact-form .form-control{
+    color: #ffffff;
+}
+#contact-form .form-control option{
+    color: #000000;
+}
+#contact-form ::placeholder{
+    color: #ffffff;
+}
 @media(min-width: 576px) {
     /*index.html*/
     #home-body {
