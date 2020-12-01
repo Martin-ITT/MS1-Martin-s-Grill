@@ -33,7 +33,7 @@
                         <!-- ID's to be created on page -->
                         <a class="dropdown-item" href="about.html#about-team">Our team</a>
                         <!-- <div class="dropdown-divider"></div> -->
-                        <a class="dropdown-item" href="about.html#about-galery">Galery</a>
+                        <a class="dropdown-item" href="about.html#about-gallery">Galery</a>
                     </div>
                 </li>
                 <li class="nav-item active">
@@ -45,7 +45,7 @@
           </ul>          
         </div>
     </nav>
-   <section id="slideshow">
+   <section id="menu-slideshow">
        <!-- Slick framework carousel https://kenwheeler.github.io/slick/-->
        <!-- tutorial https://www.youtube.com/watch?v=hyr2zasS27w-->
        <div class="slick">
@@ -54,6 +54,52 @@
            <div><img src="./img/lq-fries-698965-pxhere.jpg" alt=""></div>
        </div>
    </section>
+
+   <section id="menu-menu">
+        <div class="container pt-4">
+            <h2>Menu</h2>
+        </div>
+        <div>
+           <h4>Padraig’s Steaks</h4>
+           <h6>12oz Sirloin Steak €17.95<br>
+                12oz Rib-Eye Steak €17.95<br>
+                10oz Fillet Steak €19.95<br>
+                16oz Tomahawk Steak €17.95
+            </h6>
+        </div>
+        <div>
+            <h4>Sumptuos Meals</h4>
+            <h6>Chicken Caesar Salad €14.95<br>
+                Tangy BBQ Ribs €16.95<br>
+                Palatial Buffalo Wings €17.95<br>
+                Fresh Prawns €14.95<br>
+            </h6>
+        </div>
+        <div>
+            <h4>Burgers</h4>
+            <h6>Martin’s Special €17.95<br>
+                T-Bone Steak Burger €17.95<br>
+                Texas Burger €15.95<br>
+            </h6>
+        </div>
+        <div>
+            <h4>Chips</h4>
+            <h6>Large Basket of Chips €5.95<br>
+                Garlic/Cheese chisp €5.95
+            </h6>
+        </div>
+        <div>
+            <h4>Lucy’s Temptation</h4>
+            <h6>Magnificent Milkshakes €5.95<br>
+                Deluxe Sundae €7.95<br>
+                Caramel-Pecan cheesecake €6.95<br>
+                Black Forest Cake €6.95<br>
+            </h6>
+        </div>
+
+   </section>
+
+
     <footer>
         <!-- Copyright MDB https://mdbootstrap.com/docs/jquery/navigation/footer/-->
         <!-- footer properties-->
@@ -86,13 +132,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <!-- Slick-->
-   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(() => {
-            $('#slideshow .slick').slick({
+            $('#menu-slideshow .slick').slick({
               autoplay:true,
               fade: true,
               autoplaySpeed: 3000,

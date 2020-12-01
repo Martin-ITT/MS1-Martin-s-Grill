@@ -5,21 +5,21 @@
     background-size: cover;
     background-position: 30% 50%;    
 }
-section #welcome-text {
+#home-body #welcome-text {
     padding-top: 200px;   
     width: 50%;
     text-align: center;
 }
 
-section #welcome-text h2 {
+#home-body h2 {
     padding-left: 10px;
     font-size: 1.6em;
 }
-section #welcome-text h4{
+#home-body #welcome-text h4{
     font-size: 1.2em;
 }
-#button-order{
-    font-size: 1.em;
+#home-body #button-order{
+    font-size: 1em;
 }
 /*about.html*/
 #about-promise{
@@ -69,10 +69,7 @@ section #welcome-text h4{
 }
 #about-team p{
     font-size: .8em;
-}/*
-#about-team .img-cont{
-    max-height: 150px;
-}*/
+}
 #about-team img{
     border-radius: 2px ;
     height: 150px;
@@ -93,16 +90,33 @@ section #welcome-text h4{
 #about-gallery h2{
     font-size: 1.5em;
 }
-#slideshow div {
+#menu-slideshow div {
     width: 100%;
     height: 200px;
 }
-#slideshow img {
+#menu-slideshow img {
     max-width: 100%;
     height: auto;
     }
-
-
+#menu-menu{
+    height:700px;
+    background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: center;
+    border-left: 1px;
+}
+#contact{
+    height: 900px;
+    padding-bottom: 1em;
+    background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#map{
+    width: 100%;
+    height: 300px;
+}
 
 @media(min-width: 576px) {
     /*index.html*/
@@ -110,20 +124,20 @@ section #welcome-text h4{
         height: 700px;
         background-position: 25% 50%;
     }
-    section #welcome-text {
+    #home-body #welcome-text {
         width: 40%;
         padding-top: 220px;   
     }
     
-    section #welcome-text h2 {
+    #home-body #welcome-text h2 {
         padding-left: 0px;
         font-size: 2em;
     }
 
-    section #welcome-text h4{
+    #home-body #welcome-text h4{
         font-size: 1.5em;
     }
-    #button-order{
+    #home-body #button-order{
         font-size: 1.7em;
     }
     /*about.html*/
@@ -140,24 +154,24 @@ section #welcome-text h4{
     #home-body {
         height: 900px;
     }
-    section #welcome-text {
+    #home-body #welcome-text {
         padding-top: 280px;
         text-align: center;  
     }
     
-    section #welcome-text h2 {
+    #home-body #welcome-text h2 {
        
         font-size: 2.5em;
     }
-    section #welcome-text h4{
+    #home-body #welcome-text h4{
         font-size: 2.0em;
     }
 }
 @media(min-width: 1200px){
-    section #welcome-text h2 {
+    #home-body #welcome-text h2 {
         font-size: 3.em;
     }
-    section #welcome-text h4{
+    #home-body #welcome-text h4{
         font-size: 2.2em;
     }
 }
