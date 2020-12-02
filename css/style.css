@@ -6,20 +6,17 @@
     background-position: 30% 50%;    
 }
 #home-body #welcome-text {
-    padding-top: 200px;   
-    width: 50%;
-    text-align: center;
+    padding-top: 200px;
 }
 
 #home-body h2 {
-    padding-left: 10px;
     font-size: 1.6em;
 }
 #home-body #welcome-text h4{
     font-size: 1.2em;
 }
 #home-body #button-order{
-    font-size: 1em;
+    font-size: .9em;
 }
 /*about.html*/
 #about-promise{
@@ -107,18 +104,24 @@
     border-left: 1px;
 }
 #contact{
-    height: 900px;
+    max-height: 1350px;
     padding-bottom: 1em;
     background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
     background-size: cover;
     background-position: 50% 50%;
 }
 #map{
-    width: 100%;
+    min-width: 300px;
     height: 300px;
+    border-radius: 5px;
 }
+/* FORM */
 /*https://www.youtube.com/watch?v=OB-75ysZhfY*/
 #contact-form{
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 5px;
     background-color: rgba(0,0,0,0.5);
 }
 #contact-form p{
@@ -150,12 +153,10 @@
         background-position: 25% 50%;
     }
     #home-body #welcome-text {
-        width: 40%;
         padding-top: 220px;   
     }
     
     #home-body #welcome-text h2 {
-        padding-left: 0px;
         font-size: 2em;
     }
 
@@ -180,12 +181,10 @@
         height: 900px;
     }
     #home-body #welcome-text {
-        padding-top: 280px;
-        text-align: center;  
+        padding-top: 280px; 
     }
     
     #home-body #welcome-text h2 {
-       
         font-size: 2.5em;
     }
     #home-body #welcome-text h4{

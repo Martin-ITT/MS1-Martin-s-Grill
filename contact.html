@@ -8,6 +8,11 @@
     <!-- BS4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href=" css/style.css">
+    <!-- Google map -->
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHol2w_K2-qjVP3IeA9CUDPA8OhqPe5Mw&callback=initMap">
+</script>
+    
     <title>Martin's homepage</title>
    
 </head>
@@ -48,7 +53,7 @@
         <div id="contact-address">
             <div class="container pt-4">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-4 text-center text-md-right">
                         <h4>address</h4>
                         <h6>The Martin’s Grill<br>
                             1 St Stephen's Green, Dublin 2, D02 FY84
@@ -63,51 +68,53 @@
                             Dining 4pm – 10pm (SU)
                         </h6>
                     </div>
-                    <div id="contact-map" class="col-6">
-                        <p>Map here</p>
+                    <div id="contact-map" class="col-md-8">
                         <div id="map">
-                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4123.787572679371!2d-6.275258555952855!3d53.33941612912131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9ea7f423b3%3A0xa1c6b3cd5b12a17c!2sStephen&#39;s%20Green%20Shopping%20Centre!5e0!3m2!1ssk!2sie!4v1606838215405!5m2!1ssk!2sie" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    <hr>
         <div id="contact-form">
             <div class="container">
                 <form>
+                    <div class="container pt-4 text-center text-white">
+                        <h2>Contact us</h2>
+                    </div>
                     <div class="form-group">
                         <label><p>Name</p></label>
-                        <input type="text" class="form-control" placeholder="Add Name">
+                        <input type="text" class="form-control" placeholder="add name">
                     </div>
         
                     <div class="form-group">
                         <label><p>Email</p></label>
-                        <input type="email" class="form-control" placeholder="Add email">
+                        <input type="email" class="form-control" placeholder="add email">
                         <small id="emailHelp" class="form-text text-muted"><p>We'll never share your email address.</p></small>
                     </div>
                     <div class="form-group">
                         <label><p>Subject</p></label>
-                        <input type="text" class="form-control" placeholder="Subject">
+                        <input type="text" class="form-control" placeholder="subject">
                     </div>
 
                     <div class="form-group">
                         <label><p>Message</p></label>
-                        <textarea type="text" class="form-control" placeholder="Add message"></textarea>
+                        <textarea type="text" class="form-control" placeholder="add message"></textarea>
                     </div>
         
                     <div class="form-group">
                         <label><p>Do you need reply?</p></label>
                         <select class="form-control">
-                        <option value="none"><p>Please select...</p></option>
+                        <option value="none"><p>please select...</p></option>
                         <option value="false">No, this was just a comment for your attention.</option>
                         <option value="true">Yes, I'd like to hear from you back.</option>
                         </select>
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col text-center">
-                                <button class="btn btn-secondary">Submit form.</button>
+                            <div class="col text-center pt-2 pb-4">
+                                <button class="btn btn-light border border-dark">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -115,7 +122,7 @@
               </div>
         </div>
     </section>
-    
+  
     <footer>
         <!-- Copyright MDB https://mdbootstrap.com/docs/jquery/navigation/footer/-->
         <!-- footer properties-->
@@ -147,5 +154,17 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+        function initMap(){
+            var options = {
+                zoom:14,
+                center:{lat:53.3402575,lng:-6.2637580}
+            }
+            var map = new
+            google.maps.Map(document.getElementById('map'), options);
+        }
+    </script>
+   
+
 </body>
 </html>
