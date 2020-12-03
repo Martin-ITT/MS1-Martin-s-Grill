@@ -7,24 +7,27 @@
     <meta name="author" content="Martin Pavlin">
     <!-- BS4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Overlock+SC&family=Overpass+Mono:wght@400;600&family=Ovo&family=Playfair+Display+SC:wght@400;700;900&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href=" css/style.css">
     <title>Martin's homepage</title>
 </head>
 
 <body>
-    <!-- Bootstrap navbars https://getbootstrap.com/docs/4.0/components/navbar/ -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="./img/martinsLogo.png" width="80" height="80" alt="">The Martin's Grill</a>
+     <!-- Bootstrap navbars https://getbootstrap.com/docs/4.0/components/navbar/ -->
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="./img/martinsLogo.png" alt="">The Martin's Grill</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mr-5"><!-- mr-auto changed to mr-4 with ml-auto layout-->
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home </a>
+            <ul class="navbar-nav ml-auto mr-lg-3"><!-- mr-auto changed to mr-4 with ml-auto layout-->
+                <li class="nav-item active mr-lg-2">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us<span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown mr-lg-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="about.html">Our promise</a>
                         <!-- ID's to be created on page -->
@@ -33,10 +36,10 @@
                         <a class="dropdown-item" href="about.html#about-gallery">Galery</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-lg-2">
                     <a class="nav-link" href="menu.html">Menu</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-lg-2">
                     <a class="nav-link" href="contact.html">Contact us</a>
                 </li>
           </ul>          
@@ -51,15 +54,15 @@
                     <h2>Experience and friendliness is our people.</h2>
                 </div>
                 <div class="d-flex justify-content-center flex-wrap pt-2">
-                    <div class="img-cont m-auto"><img src="./img/burger-pexels-valeria-boltneva-1251197.jpg" alt="Beef"></div>
+                    <div class="img-cont m-auto pb-2"><img src="./img/burger-pexels-valeria-boltneva-1251197.jpg" alt="Beef"></div>
                     <div class="text-cont m-auto"><h4>We only use 100% Irish beef in our burgers. Bord Bia guaranteed.</h4></div>
                 </div>
                 <div class="d-flex justify-content-center flex-sm-row-reverse flex-wrap">
-                    <div class="img-cont m-auto"><img src="./img/lq-fries-1367049-pxhere.jpg" alt="Potatoes"></div>
+                    <div class="img-cont m-auto pb-2"><img src="./img/lq-fries-1367049-pxhere.jpg" alt="Potatoes"></div>
                     <div class="text-cont m-auto"><h4>Our home made thick cut fries are made from Russet potatoes.</h4></div>
                 </div>
                   <div class="d-flex justify-content-center flex-wrap">
-                    <div class="img-cont m-auto"><img src="./img/milkshake.pexels-sanket-sawant-2340204.jpg" alt=""></div>
+                    <div class="img-cont m-auto"><img src="./img/milkshake.pexels-sanket-sawant-2340204.jpg" alt="Milkshakes"></div>
                     <div class="text-cont m-auto"><h4>Our milk is sourced from Keating’s dairy farm, Co. Anntrim</h4></div>
                   </div>
                 </div>                
