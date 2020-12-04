@@ -12,10 +12,21 @@
 /*index.html*/
 #home-body {
     height: 600px;
-    background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
+    animation: animate-hero 8s ease-in-out infinite;
     background-size: cover;
-    background-position: 30% 50%;    
+    background-position: 30% 50%;
+    text-shadow: 0 0 5px rgba(255,255,255,.8), 0 0 5px rgba(255,255,255,.8);
 }
+@keyframes animate-hero {
+    0%,100%{
+        background-image: url(/img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg)}
+    33%{
+        background-image: url(/img/hero-pexels-valeria-boltneva-1251198.jpg);
+    }
+    66%{
+        background-image: url(/img/milkshake.pexels-sanket-sawant-2340204.jpg);
+    }
+} 
 #home-body div{
     width: 50%;
      text-align: center;
@@ -109,21 +120,30 @@
 }
 
 /* menu.html */
-#menu-slideshow div {
-    width: 100%;
-    height: 200px;
-}
-#menu-slideshow img {
-    max-width: 100%;
-    height: auto;
-    }
 #menu-menu{
+    animation: animate-hero 8s ease-in-out infinite;
     height:700px;
-    background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
     background-size: cover;
-    background-position: 50% 50%;
     text-align: center;
-    border-left: 1px;
+}
+@keyframes animate-menu {
+    0%,100%{
+        background-image: url(/img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg)}
+    33%{
+        background-image: url(/img/hero-pexels-valeria-boltneva-1251198.jpg);
+    }
+    66%{
+        background-image: url(/img/milkshake.pexels-sanket-sawant-2340204.jpg);
+    }
+}
+#menu-list{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    color: /*#BE9E6A*/ #9a9da0;
+    background-color: rgba(0,0,0,0.5);
 }
 
 /* contact.html */
@@ -139,12 +159,21 @@
     height: 300px;
     border-radius: 5px;
 }
+#contact-slideshow div {
+    width: 100%;
+    height: 100px;
+}
+#contact-slideshow img {
+    max-width: 100%;
+    height: auto;
+    }
 /* TRANSPARENT FORM */
 /*https://www.youtube.com/watch?v=OB-75ysZhfY*/
 #contact-form{
     width: 90%;
     margin: auto;
     padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 5px;
     background-color: rgba(0,0,0,0.5);
 }
