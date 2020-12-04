@@ -16,6 +16,10 @@
     background-size: cover;
     background-position: 30% 50%;    
 }
+#home-body div{
+    width: 50%;
+     text-align: center;
+    }  
 #home-body #welcome-text {
     padding-top: 200px;
 }
@@ -38,7 +42,7 @@
 #about-promise{
     min-height: 900px;
     padding-bottom: 1em;
-    background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+    background-image: url(../img/bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
     background-size: cover;
     background-position: 50% 50%;
     color: black;
@@ -67,36 +71,34 @@
 #about-team{
     min-height: 930px;
     padding-bottom: 1em;;
-    background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+    background-image: url(../img/bg-team-restaurant-103038-pxhere.png);
     background-size: cover;
     background-position: 50% 50%;
     color: black;
     text-align: center;
 }
-#about-team h2{
-    font-size: 1.5em;
-}
 #about-team h4{
-    font-size: 1.2em;
+    font-size: 1.6em;
+    font-family: 'Ovo', Copperlate, Tahoma;
 }
 #about-team h6{
-    font-size: 1em;
+    font-size: 1.4em;
+    font-family: 'Ovo', Copperlate, Tahoma;
 }
 #about-team p{
-    font-size: .8em;
+    font-size: 1em;
+    font-family: 'Ovo', Copperlate, Tahoma;
 }
 #about-team img{
-    border-radius: 2px ;
     height: 150px;
 }
 #about-team .text-cont{
-    max-height: 150px;
     max-width: 70%;
 }
 #about-gallery{
     min-height: 300px;
     padding-bottom: 1em;
-    background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+    background-image: url(/img/bg-decor-background-pexels-pixabay-276514-min.png);
     background-size: cover;
     background-position: 50% 50%;
     color: black;
@@ -206,7 +208,9 @@
     #about-promise .text-cont{
         max-width: 60%;
     }
-    
+    #about-team img{
+        height: 200px;
+    }
 }
 
 @media(min-width: 768px) {
@@ -242,6 +246,10 @@
     #about-promise .text-cont{
         max-width: 40%;
     }
+    #about-team{
+        min-height: 500px;
+    }
+    
 }
 @media(min-width: 1200px){
     /*index.html*/
@@ -267,12 +275,15 @@
     #about-promise img{
         height: 320px;
     }
-    
-}
-@media(min-width: 1600px){
-    .container{
-        min-width: 90%;
+    #about-team{
+        min-height: 700px;
+        padding-top: 50px;
     }
+    #about-team img{
+        height: 300px;
+    }  
+}
+@media(min-width: 1600px){  
     /*index.html*/
     #home-body #welcome-text h2 {
         font-size: 3em;
@@ -291,4 +302,4 @@
      #about-promise img{
          height: 400px;
      }
-}
+    }
