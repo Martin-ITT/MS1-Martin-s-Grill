@@ -3,6 +3,15 @@
     width: 60px;
     height: 60px;
 }
+.navbar img:hover{
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 .navbar a
 /*.navbar .nav-link*/{
     font-family: 'Overlock SC', serif;
@@ -19,12 +28,12 @@
 }
 @keyframes animate-hero {
     0%,100%{
-        background-image: url(/img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg)}
+        background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg)}
     33%{
-        background-image: url(/img/hero-pexels-valeria-boltneva-1251198.jpg);
+        background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
     }
     66%{
-        background-image: url(/img/milkshake.pexels-sanket-sawant-2340204.jpg);
+        background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg);
     }
 } 
 #home-body div{
@@ -34,11 +43,27 @@
 #home-body #welcome-text {
     padding-top: 200px;
 }
+/* Main title animation with a css help courtesy of my classmate Miranda & Marcel Balint https://github.com/mkthewlis*/
 #home-body h2 {
     font-size: 1.6em;
     font-family: 'Overlock SC', Copperlate, Tahoma;
     font-weight: 500;
-    
+    animation-name: moveleft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;   
+}
+@keyframes moveleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(0.4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 #home-body #welcome-text h4{
     font-size: 1.2em;
@@ -109,7 +134,7 @@
 #about-gallery{
     min-height: 300px;
     padding-bottom: 1em;
-    background-image: url(/img/bg-decor-background-pexels-pixabay-276514-min.png);
+    background-image: url(../img/bg-decor-background-pexels-pixabay-276514-min.png);
     background-size: cover;
     background-position: 50% 50%;
     color: black;
@@ -121,19 +146,19 @@
 
 /* menu.html */
 #menu-menu{
-    animation: animate-hero 8s ease-in-out infinite;
+    animation: animate-menu 8s ease-in-out infinite;
     height:700px;
     background-size: cover;
     text-align: center;
 }
 @keyframes animate-menu {
     0%,100%{
-        background-image: url(/img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg)}
+        background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg)}
     33%{
-        background-image: url(/img/hero-pexels-valeria-boltneva-1251198.jpg);
+        background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
     }
     66%{
-        background-image: url(/img/milkshake.pexels-sanket-sawant-2340204.jpg);
+        background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg);
     }
 }
 #menu-list{
@@ -150,7 +175,7 @@
 #contact{
     max-height: 1350px;
     padding-bottom: 1em;
-    background-image: url(../img/web-bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+    background-image: url(../img/bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
     background-size: cover;
     background-position: 50% 50%;
 }
