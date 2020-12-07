@@ -1,8 +1,20 @@
 /*  general */
+/* cursor over links & btns*/
+header .nav-item li:hover{
+    cursor: context-menu;
+}
+a:hover {
+    cursor: context-menu;
+}
+/* navbar style */
 .navbar img {
     width: 60px;
     height: 60px;
 }
+.btn:not(:disabled):not(.disabled){
+    cursor: context-menu;
+}
+/* navbar logo animation */
 /* https://stackoverflow.com/questions/16771225/css3-rotate-animation */
 .navbar img:hover{
     -webkit-animation:spin 4s linear infinite;
@@ -11,41 +23,61 @@
 }
     @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
     @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+}
 .navbar a
 /*.navbar .nav-link*/{
     font-family: 'Overlock SC', serif;
     font-size: 1.4em;
 }
+/* footer social icons*/
+footer img{
+    width: 50px;
+    height: 50px;
+}
+footer .dropdown-item{
+    color: #f8f9fa;
+}
+footer .dropdown-item:visited{
+    background-color: #343a40;
+}
+footer .dropdown-item:hover{
+    background-color: #343a40;
+}
+footer p{
+    margin: 0px;
+    padding: 0px;
+}
 
 /*index.html*/
+/* main part with background animation*/
 #home-body {
-    height: 600px;
+    min-height: 550px;
     animation: animate-hero 8s ease-in-out infinite;
     background-size: cover;
     background-position: 30% 50%;
     text-shadow: 0 0 5px rgba(255,255,255,.8), 0 0 5px rgba(255,255,255,.8);
 }
 @keyframes animate-hero {
-    0%,100%{
-        background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg)}
-    33%{
-        background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
-    }
-    66%{
+    0%, 100%{
         background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg);
     }
-} 
+    /*33%{
+        background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
+    }*/
+    70%{
+        background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg)      
+    }
+}
+/*weclome text container */ 
 #home-body div{
     width: 50%;
      text-align: center;
+     padding-top: 200px;
     }  
-#home-body #welcome-text {
-    padding-top: 200px;
-}
 /* Main title animation with a css help courtesy of my classmate Miranda & Marcel Balint https://github.com/mkthewlis*/
 /* added delay https://css-tricks.com/a-new-way-to-delay-keyframes-animations/*/
+/* welcome part animated */
 #home-body h2 {
     font-size: 1.6em;
     font-family: 'Overlock SC', Copperlate, Tahoma;
@@ -67,6 +99,7 @@
     transform: translateX(0);
   }
 }
+/*hungry part animated*/
 #home-body #welcome-text h4{
     font-size: 1.2em;
     font-family: 'Original Surfer', Copperlate, Tahoma;
@@ -77,7 +110,7 @@
 @keyframes movedown {
     0% {
       opacity: 0;
-      transform: translateY(-14rem);
+      transform: translateY(-3rem);
     }
     80% {
       transform: translateY(3rem);
@@ -87,6 +120,7 @@
       transform: translateY(0);
     }
   }
+/* order now button animated*/
 #home-body #button-order{
     font-size: .9em;
     font-family: 'Overpass Mono', Copperlate, Tahoma;
@@ -97,7 +131,7 @@
 @keyframes movetop {
 0%, 25%, 70% {
 opacity: 0;
-transform: translateY(30rem);
+transform: translateY(10rem);
 }
 80% {
 transform: translateY(1rem);
@@ -173,6 +207,10 @@ transform: translateY(0);
     color: black;
     text-align: center;
 }
+/*corners cut on slideshow*/
+#about-gallery #carouselExampleIndicators div{
+    border-radius: 10px;
+}
 #about-gallery h2{
     font-size: 1.5em;
 }
@@ -229,12 +267,12 @@ transform: translateY(0);
 /*https://www.youtube.com/watch?v=OB-75ysZhfY*/
 #contact-form{
     width: 90%;
+    padding-top: 50px;
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-radius: 5px;
     background-color: rgba(0,0,0,0.5);
 }
+ 
 #contact-form p{
     color: #ffffff;
     margin: 0;
@@ -301,9 +339,13 @@ transform: translateY(0);
 }
 
 @media(min-width: 768px) {
+    /*general*/
+    .container{
+        max-width: 90%;
+    }
     /* index.html*/
     #home-body {
-        height: 900px;
+        height: 940px;
     }
     #home-body #welcome-text {
         padding-top: 280px;
