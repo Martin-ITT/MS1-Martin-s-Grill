@@ -3,6 +3,7 @@
     width: 60px;
     height: 60px;
 }
+/* https://stackoverflow.com/questions/16771225/css3-rotate-animation */
 .navbar img:hover{
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
@@ -44,21 +45,22 @@
     padding-top: 200px;
 }
 /* Main title animation with a css help courtesy of my classmate Miranda & Marcel Balint https://github.com/mkthewlis*/
+/* added delay https://css-tricks.com/a-new-way-to-delay-keyframes-animations/*/
 #home-body h2 {
     font-size: 1.6em;
     font-family: 'Overlock SC', Copperlate, Tahoma;
     font-weight: 500;
     animation-name: moveleft;
-    animation-duration: 1.5s;
+    animation-duration: 4s;
     animation-timing-function: ease-out;   
 }
 @keyframes moveleft {
-  0% {
+  0%, 25%, 50% {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(-30rem);
   }
   80% {
-    transform: translateX(0.4rem);
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
@@ -67,13 +69,44 @@
 }
 #home-body #welcome-text h4{
     font-size: 1.2em;
-    font-family: 'Original Surfer', Copperlate, Tahoma;    
+    font-family: 'Original Surfer', Copperlate, Tahoma;
+    animation-name: movedown;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;    
 }
+@keyframes movedown {
+    0% {
+      opacity: 0;
+      transform: translateY(-14rem);
+    }
+    80% {
+      transform: translateY(3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 #home-body #button-order{
     font-size: .9em;
     font-family: 'Overpass Mono', Copperlate, Tahoma;
+    animation-name: movetop;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;   
 }
-
+@keyframes movetop {
+0%, 25%, 70% {
+opacity: 0;
+transform: translateY(30rem);
+}
+80% {
+transform: translateY(1rem);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
 /*about.html*/
 #about-promise{
     min-height: 900px;
