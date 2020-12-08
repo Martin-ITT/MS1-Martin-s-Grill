@@ -35,6 +35,11 @@ header .nav-item li:hover{ /* keep same cursor on the navbar list - blinking cur
 
 /* ------------------------------ FOOTER ------------------------------- */
     /* footer social icons*/
+.navbar-brand{
+    margin-right: 0; /* overiding BS4 values*/
+    margin: 5px;
+}
+
 footer img{
     width: 40px;
     height: 40px;
@@ -48,7 +53,6 @@ footer img:hover {
     /* When the animation is finished, start again */
     animation-iteration-count: infinite;
   }
-  
   @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -62,8 +66,10 @@ footer img:hover {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
-
 /* right side menu style */
+.dropdown-item {
+    padding: 3px; /* overiding BS4 style*/
+}
 footer .dropdown-item{
     color: #f8f9fa;
 }
@@ -76,6 +82,7 @@ footer .dropdown-item:hover{
 footer p{ /* p elemnt margind creating white strip at the bottom of the screen */
     margin: 0px;
     padding: 0px;
+    font-size: .7em;
 }
 
 /* The popup form - hidden by default */
@@ -142,7 +149,7 @@ opacity: 1;
 
 /* main part with background animation*/
 #home-body {
-    min-height: 494px; /* optimalized height for iphone X 375*812*/
+    min-height: 726px; /* optimalized height for iphone X 375*812*/
     animation: animate-hero 8s ease-in-out infinite; /* background animation*/
     background-size: cover; /* size of background animation*/
     background-position: 30% 50%; /* backround animation moved */  
@@ -159,7 +166,7 @@ opacity: 1;
 #home-body div{
     width: 60%; /* ideal size of welcome text - checked for responsive design - effectign h2&h4 position on screen */
      text-align: center;
-     padding-top: 200px; /* text pushed down - checked for responsive design*/
+     padding-top: 240px; /* text pushed down - checked for responsive design*/
      text-shadow: 0 0 5px rgba(255,255,255,.8), 0 0 5px rgba(255,255,255,.8); /* text shadow for easier readability */
     }  
 
@@ -246,9 +253,9 @@ transform: translateY(0);
     background-color: #555; /* Add a dark-grey background on hover */
   }
 
-/* first section*/
+/* first section - promise*/
 #about-promise{
-    min-height: 900px;
+    /* min-height: 900px; */
     padding-bottom: 1em;
     background-image: url(../img/bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
     background-size: cover;
@@ -256,33 +263,37 @@ transform: translateY(0);
     color: black;
     text-align: center;
 }
-#about-promise h2,
-#about-team h2,
-#about-gallery h2{
-    font-size: 1.2em;
+/* h2 elements style */
+#about-promise h2 {
+    font-size: 1.1em;
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
-    font-weight: 600;
+    font-weight: 500;
 }
+/* h4 elements style */
 #about-promise h4{
-    font-size: 1.4em;
+    font-size: 1em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
+/* image style */
 #about-promise img{
-    border-radius: 5px;
-    height: 210px;
+    border-radius: 5px; /* cuts sharp corners*/
+    height: 180px; /* picture size */
     /* zoom animation https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
-    transition: transform .2s;
+    transition: transform .5s; /* zoom effect time */
     }
+/* zoom on hover */
 #about-promise img:hover {
-        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
+/* text around pictures */
 #about-promise .text-cont{
-    max-height: 170px;
+    /*max-height: 170px;*/
     max-width: 80%;
 }
 
+/* second section - team */
 #about-team{
-    min-height: 930px;
+    /*min-height: 930px;*/
     padding-bottom: 1em;;
     background-image: url(../img/bg-team-restaurant-103038-pxhere.png);
     background-size: cover;
@@ -290,35 +301,45 @@ transform: translateY(0);
     color: black;
     text-align: center;
 }
+/* text styles */
+#about-team h2,
+#about-gallery h2{
+    font-size: 1.1em;
+    font-family: 'Playfair Display SC', Copperlate, Tahoma;
+    font-weight: 500;
+}
 #about-team h4{
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
 #about-team h6{
-    font-size: 1.4em;
+    font-size: 1.em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
 #about-team p{
-    font-size: 1em;
+    font-size: .9em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
 #about-team img{
     height: 150px;
     /* zoom animation https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
-    transition: transform .2s;
+    transition: transform .5s;
 }
+/* zoom animation*/
 #about-team img:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1);
   }
+/* text around pictures */
 #about-team .text-cont{
     max-width: 70%;
 }
+
+/* third section - gallery*/
 #about-gallery{
-    min-height: 300px;
+    /*min-height: 300px;*/
     padding-bottom: 1em;
     background-image: url(../img/bg-decor-background-pexels-pixabay-276514-min.png);
     background-size: cover;
-    background-position: 50% 50%;
     color: black;
     text-align: center;
 }
@@ -327,15 +348,19 @@ transform: translateY(0);
     border-radius: 10px;
 }
 #about-gallery h2{
-    font-size: 1.5em;
+    font-size: 1.1em;
+    font-family: 'Playfair Display SC', Copperlate, Tahoma;
+    font-weight: 500;
 }
 
-/* menu.html */
+/* --------------------------------------------- menu.html ------------------------------------------------- */
+/* whole section */
 #menu-menu{
-    animation: animate-menu 8s ease-in-out infinite;
-    height:700px;
+    height: 726px;
     background-size: cover;
     text-align: center;
+    background-image: url(../img/steak-meat-1259012-pxhere\ -\ Copy.jpg);
+   /* animation: animate-menu 8s ease-in-out infinite;
 }
 @keyframes animate-menu {
     0%,100%{
@@ -344,40 +369,48 @@ transform: translateY(0);
         background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
     }
     66%{
-        background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg);
-    }
+        background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg); 
+    } */
 }
+/* menu container */
 #menu-list{
-    width: 50%;
+    width: 80%;
     height: 100%;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 80px;
     text-align: center;
     color: /*#BE9E6A*/ #9a9da0;
     background-color: rgba(0,0,0,0.5);
 }
-
-/* contact.html */
+/* menu text style */
+#menu-list h2{
+    font-size: 1.1em;
+    font-family: 'Playfair Display SC', Copperlate, Tahoma;
+    font-weight: 500;
+}
+#menu-list h4{
+    padding-top: 20px;
+    font-size: 1em;
+    font-family: 'Ovo', Copperlate, Tahoma;
+}
+#menu-list h6{
+    font-size: .7em;
+    font-family: 'Ovo', Copperlate, Tahoma;
+}
+/* ----------------------------------------------- contact.html ------------------------------------------------- */
+/* whole section */
 #contact{
-    max-height: 1350px;
+    /* max-height: 1350px; */
     padding-bottom: 1em;
     background-image: url(../img/bg-lq-steak-gonzalo-guzman-3997609.png);
     background-size: cover;
-    background-position: 50% 50%;
 }
+/* map container */ 
 #map{
     min-width: 300px;
     height: 300px;
     border-radius: 5px;
 }
-#contact-slideshow div {
-    width: 100%;
-    height: 100px;
-}
-#contact-slideshow img {
-    max-width: 100%;
-    height: auto;
-    }
 /* TRANSPARENT FORM */
 /*https://www.youtube.com/watch?v=OB-75ysZhfY*/
 #contact-form{
@@ -410,15 +443,23 @@ transform: translateY(0);
 #contact-form ::placeholder{
     color: #ffffff;
 }
-/* responsive design */
+/*
+#contact-slideshow div {
+    width: 100%;
+    height: 100px;
+}
+#contact-slideshow img {
+    max-width: 100%;
+    height: auto;
+    } */
+
+/* --------------------------------------------------------------------------- RESPONSIVE DESIGN ------------------------------------------------------------- */
+
+/* screens higher than 576px*/
 @media(min-width: 576px) {
-    /*index.html*/
+    /* --------------index.html ---------------*/
     #home-body {
-        height: 700px;
         background-position: 25% 50%;
-    }
-    #home-body #welcome-text {
-        padding-top: 220px;   
     }
     #home-body #welcome-text h2 {
         font-size: 1.8em;
@@ -426,14 +467,14 @@ transform: translateY(0);
     }
     #home-body #welcome-text h4{
         font-size: 1.3em;
-        letter-spacing: 2px;
-        
+        letter-spacing: 2px;  
     }
     #home-body #button-order{
         font-size: 1.2em;
     }
-    
-    /*about.html*/
+
+    /* ------------ about.html --------------- */
+    /* larger  top button*/
     #about-top-btn {
         top: 30px; /* Place the button at the bottom of the page */
         right: 10px; /* Place the button 30px from the right */
@@ -441,14 +482,14 @@ transform: translateY(0);
         padding: 10px; /* Some padding */
         border-radius: 10px; /* Rounded corners */
         font-size: 12px; /* Increase font size */
-      }
-    #about-promise{
-        min-height: 700px;
     }
-    #about-promise h2,
-    #about-team h2,
-    #about-gallery h2{
+    /* font styles */
+    #about-promise h2{
         font-size: 1.6em;
+        font-weight: 700;
+    }
+    #about-promise h4{
+        font-weight: 600;
     }
     #about-promise img{
         height: 240px;
@@ -456,8 +497,25 @@ transform: translateY(0);
     #about-promise .text-cont{
         max-width: 60%;
     }
+    #about-team h2{
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+    #about-team h4{
+        font-weight: 600;
+    }
+    #about-team h6{
+        font-weight: 600;
+    }
+    #about-team p{
+        font-weight: 600;
+    }
     #about-team img{
         height: 200px;
+    }
+    #about-gallery h2{
+        font-size: 1.6em;
+        font-weight: 700;
     }
 }
 
@@ -504,6 +562,10 @@ transform: translateY(0);
     
 }
 @media(min-width: 1200px){
+   /* check footer img{
+        width: 40px;
+        height: 40px;
+    }*/
     /*index.html*/
     #home-body div{
         width: 50%;
