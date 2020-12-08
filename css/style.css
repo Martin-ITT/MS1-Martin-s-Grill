@@ -1,5 +1,27 @@
 /* -------------------------------------------------------- Genereal rules  -------------------------------------------------------------  */
 
+/* --------------------------- SCROLLBAR ------------------------------ */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #343a40; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  #808080; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #527c93; 
+  }
 /* ---------------------- CURSORS over links & btns ------------------- */
 a:hover { /* keep same cursor on the links */
     cursor: context-menu;
@@ -255,11 +277,10 @@ transform: translateY(0);
 
 /* first section - promise*/
 #about-promise{
-    /* min-height: 900px; */
     padding-bottom: 1em;
     background-image: url(../img/bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 60% 100%;
     color: black;
     text-align: center;
 }
@@ -396,6 +417,7 @@ transform: translateY(0);
 #menu-list h6{
     font-size: .7em;
     font-family: 'Ovo', Copperlate, Tahoma;
+   
 }
 /* ----------------------------------------------- contact.html ------------------------------------------------- */
 /* whole section */
@@ -404,6 +426,12 @@ transform: translateY(0);
     padding-bottom: 1em;
     background-image: url(../img/bg-lq-steak-gonzalo-guzman-3997609.png);
     background-size: cover;
+}
+#contact h4{
+    font-family: 'Ovo', Copperlate, Tahoma;
+}
+#contact h6{
+    font-family: 'Ovo', Copperlate, Tahoma;
 }
 /* map container */ 
 #map{
@@ -455,7 +483,7 @@ transform: translateY(0);
 
 /* --------------------------------------------------------------------------- RESPONSIVE DESIGN ------------------------------------------------------------- */
 
-/* screens higher than 576px*/
+/* ----------------------- screens larger than 576px ------------------------ */
 @media(min-width: 576px) {
     /* --------------index.html ---------------*/
     #home-body {
@@ -488,11 +516,8 @@ transform: translateY(0);
         font-size: 1.6em;
         font-weight: 700;
     }
-    #about-promise h4{
-        font-weight: 600;
-    }
     #about-promise img{
-        height: 240px;
+        height: 200px;
     }
     #about-promise .text-cont{
         max-width: 60%;
@@ -517,16 +542,38 @@ transform: translateY(0);
         font-size: 1.6em;
         font-weight: 700;
     }
-}
 
-@media(min-width: 768px) {
-    /*general*/
-    .container{
-        max-width: 90%;
+    /* ------------- menu.html -------------- */
+    /*section padding*/
+    #menu-list{
+        padding-top: 50px;
     }
-    /* index.html*/
+    /* font styles */
+    #menu-list h2{
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+    #menu-list h4{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    #menu-list h6{
+        font-size: .9em;
+        font-weight: 700;
+    }
+
+/* ----------------------- screens larger than 768px ------------------------ */
+@media(min-width: 768px) {
+    /* ------------------- general ------------------- */
+    /* larger social media icons */
+    footer img{
+        width: 50px;
+        height: 50px;
+    }
+
+    /* ----------------- index.html ------------------ */
     #home-body {
-        height: 940px;
+        height: 814px; /* size for iPad */
     }
     #home-body #welcome-text {
         padding-top: 280px;
@@ -541,7 +588,8 @@ transform: translateY(0);
         font-size: 1.5em;
         font-weight: 500;
     }
-    /* about.html*/
+
+    /* -------------- about.html ----------------------- */
     #about-promise h2,
     #about-team h2,
     #about-gallery h2{
@@ -550,23 +598,51 @@ transform: translateY(0);
     #about-promise h4{
         font-size: 1.6em;
     }
-    #about-promise img{
-        height: 270px;
-    }
     #about-promise .text-cont{
         max-width: 40%;
     }
     #about-team{
         min-height: 500px;
     }
+    #about-gallery .container{
+        max-width: 70%;
+    }
     
+    /* ---------------- menu.html ----------------------- */
+    #menu-menu{
+        height: 814px;
+    }
+    /* font styles */
+    #menu-list h2{
+        font-size: 2em;
+        font-weight: 800;
+        letter-spacing: 5px;
+    }
+    #menu-list h4{
+        font-size: 1.6em;
+        letter-spacing: 3px;
+    }
+    #menu-list h6{
+        font-size: 1.1em;
+        letter-spacing: 3px;
+    }
+
+    /* ---------------- contact.html --------------------- */
+    /* map container */ 
+    #contact-map{
+        padding-top: 10px;
+    }
 }
+
+
+/* ----------------------- screens larger than 1200px ------------------------ */
 @media(min-width: 1200px){
-   /* check footer img{
-        width: 40px;
-        height: 40px;
-    }*/
-    /*index.html*/
+   
+    /* ------------------- index.html -------------------- */
+    #home-body {
+        height: 727px;
+        background-position: 0% 70%; 
+    }
     #home-body div{
         width: 50%;
     }
@@ -579,12 +655,13 @@ transform: translateY(0);
     #home-body #welcome-text h4{
         font-size: 2em;
     }
-    /*about.html*/
+
+    /* --------------------- about.html -------------------- */
     #about-top-btn {
         right:15px; /* Place the button 30px from the right */
         padding: 12px; /* Some padding */
         font-size: 18px; /* Increase font size */
-      }
+    }
     #about-promise h2,
     #about-team h2,
     #about-gallery h2{
@@ -595,24 +672,47 @@ transform: translateY(0);
         font-size: 2em;
     }
     #about-promise img{
-        height: 320px;
+        height: 250px;
+    }
+    #about-promise img:hover {
+        transform: scale(1.2);
     }
     #about-team{
-        min-height: 700px;
-        padding-top: 50px;
+        padding-top: 20px;
     }
     #about-team img{
-        height: 300px;
-    }  
+        height: 250px;
+    }
+
+     /* ---------------- menu.html ----------------------- */
+     #menu-menu{
+        height: 840px;
+    }
+    /* font styles */
+    #menu-list h2{
+        letter-spacing: 7px;
+    }
+    #menu-list h4{
+        letter-spacing: 5px;
+    }
+    #menu-list h6{
+        letter-spacing: 5px;
+    }
+    
 }
+
+/* ----------------------- screens larger than 1600px ------------------------ */
 @media(min-width: 1600px){  
-    /*index.html*/
+    /* --------------- index.html ------------------------- */
+    #home-body {
+        height: 841px;
+    }
     #home-body #welcome-text h2 {
         font-size: 3em;
         letter-spacing: 10px;
         line-height: 80px;
     }
-     /*about.html*/
+     /* ------------------------- about.html ---------------- */
      #about-promise h2,
      #about-team h2,
      #about-gallery h2{
@@ -622,7 +722,20 @@ transform: translateY(0);
          font-size: 2.4em;
      }
      #about-promise img{
-         height: 400px;
+         height: 300px;
      }
+
+    /* ---------------- menu.html ----------------------- */
+    /* font styles */
+    #menu-list h2{
+        letter-spacing: 9px;
+    }
+    #menu-list h4{
+        letter-spacing: 7px;
+    }
+    #menu-list h6{
+        letter-spacing: 7px;
+    }
 }
 
+}
