@@ -47,11 +47,17 @@ header .nav-item li:hover{ /* keep same cursor on the navbar list - blinking cur
     @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } } */
     @keyframes spin { 100% { /* -webkit-transform: rotate(360deg); */ transform:rotate(360deg); } /* same start & end */
 }
-
+nav .dropdown-menu{
+    background-color: #9a9da0;
+}
+nav .dropdown-item {
+    padding-left: 10px;
+    background-color: #9a9da0;    
+}
 /* ---------------------- navbar fonts -------------------------------- */
 .navbar a
 {
-    font-family: 'Overlock SC', serif;
+    font-family: 'Overlock SC', Copperlate, Tahoma;
     font-size: 1.4em;
 }
 
@@ -89,7 +95,10 @@ footer img:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 /* right side menu style */
-.dropdown-item {
+footer #my-drop a{
+    font-family: arial, Copperlate, Tahoma;
+}
+footer .dropdown-item {
     padding: 3px; /* overiding BS4 style*/
 }
 footer .dropdown-item{
@@ -181,7 +190,7 @@ opacity: 1;
         background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg);
     }
     70%{ /* holding this picture for longer*/
-        background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg)      
+        background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);      
     }
 }
 /*weclome text container */ 
@@ -197,8 +206,8 @@ opacity: 1;
 /* added delay https://css-tricks.com/a-new-way-to-delay-keyframes-animations/*/
 #home-body h2 { 
     font-family: 'Overlock SC', Copperlate, Tahoma; /*The font-size and font-family values are required. If one of the other values is missing, their default value are used. */
-    font-size: 1.6em;
-    font-weight: 500;
+    font-size: 2.4em;
+    font-weight: 600;
     animation: moveleft 4s ease-out;
 }
 @keyframes moveleft {
@@ -216,7 +225,7 @@ opacity: 1;
 }
 /*hungry part animated*/
 #home-body #welcome-text h4{
-    font-size: 1.2em;
+    font-size: 1.8em;
     font-family: 'Original Surfer', Copperlate, Tahoma;
     animation: movedown 2s ease-out;
 }
@@ -235,7 +244,7 @@ opacity: 1;
   }
 /* order now button animated*/
 #home-body #button-order{
-    font-size: .9em;
+    font-size: 1.1em;
     font-family: 'Overpass Mono', Copperlate, Tahoma;
     animation: movetop 5s ease-out;
     }
@@ -286,13 +295,13 @@ transform: translateY(0);
 }
 /* h2 elements style */
 #about-promise h2 {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
-    font-weight: 500;
+    font-weight: 600;
 }
 /* h4 elements style */
 #about-promise h4{
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
 /* image style */
@@ -325,24 +334,24 @@ transform: translateY(0);
 /* text styles */
 #about-team h2,
 #about-gallery h2{
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
-    font-weight: 500;
+    font-weight: 600;
 }
 #about-team h4{
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
 #about-team h6{
-    font-size: 1.em;
+    font-size: 1.2em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
 #about-team p{
-    font-size: .9em;
+    font-size: 1.1em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
 #about-team img{
-    height: 150px;
+    height: 170px;
     /* zoom animation https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
     transition: transform .5s;
 }
@@ -369,9 +378,9 @@ transform: translateY(0);
     border-radius: 10px;
 }
 #about-gallery h2{
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* --------------------------------------------- menu.html ------------------------------------------------- */
@@ -405,17 +414,17 @@ transform: translateY(0);
 }
 /* menu text style */
 #menu-list h2{
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
     font-weight: 500;
 }
 #menu-list h4{
     padding-top: 20px;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
 #menu-list h6{
-    font-size: .7em;
+    font-size: .9em;
     font-family: 'Ovo', Copperlate, Tahoma;
    
 }
@@ -448,11 +457,14 @@ transform: translateY(0);
     border-radius: 5px;
     background-color: rgba(0,0,0,0.5);
 }
- 
+#contact-form h2{
+    font-family: 'Playfair Display SC', Copperlate, Tahoma;
+}
 #contact-form p{
     color: #ffffff;
     margin: 0;
     padding: 0;
+    font-family: 'Ovo', Copperlate, Tahoma;
 }
 #contact-form input[type=text],
 #contact-form input[type=email],
@@ -461,6 +473,7 @@ transform: translateY(0);
     border: none;
     border-bottom: 1px solid #ffffff;
     background-color: transparent;
+    font-family: 'Ovo', Copperlate, Tahoma;
 }
 #contact-form .form-control{
     color: #ffffff;
