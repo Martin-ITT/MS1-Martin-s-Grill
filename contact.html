@@ -14,12 +14,14 @@
     <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHol2w_K2-qjVP3IeA9CUDPA8OhqPe5Mw&callback=initMap">
     </script>
-     <!-- Slick -->
-     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <script src="./js/subscribe.js"></script>
     <link rel="stylesheet" href=" css/style.css">
     <title>Martin's homepage</title>
+    <link rel="icon" href="./img/martinsLogo.png" type="image/png">
 </head>
 
 <body>
@@ -136,6 +138,7 @@
             <div><img src="./img/food-rumman-amin-k-gWRgrU2N8-unsplash.jpg" alt=""></div>
         </div>
     </section> -->
+
     <footer>
         <!-- Copyright MDB https://mdbootstrap.com/docs/jquery/navigation/footer/-->
         <!-- footer properties-->
@@ -144,17 +147,26 @@
                 <div class="row align-items-center pt-4">
                     <!-- sm to expand on screens from 576px -->
                     <div class="col-md text-lg-left"> 
-                        <button class="btn btn-light button-subscribe">Subscribe</button>
+                        <button class="btn btn-light button-subscribe" onclick="openForm()">Subscribe</button>
+                            <div class="form-popup text-center" id="contactForm">
+                            <form name="subscribeForm" class="form-container" onsubmit="subscribeAlert()">
+                                <h1>Subscribe</h1>
+                                <!-- <label for="email"><b>Email</b></label> -->
+                                <input type="email" placeholder="please enter email" name="email" required>
+                                <button type="submit" class="btn">subscribe</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">not now</button>
+                            </form>
+                        </div>
                     </div>
                     <div class="col-md">
                         <a class="navbar-brand" href="https://www.facebook.com" target="blank"><img src="./img/pinterest Facebook White Icon, Facebook Icons, White Icons, Icon PNG and Vector with Transparent Background for Free Download.png" alt="Facebook"></a>
                         <a class="navbar-brand" href="https://www.twitter.com" target="blank"><img src="./img/pinterest Twitter White Icon, Twitter Icons, White Icons, Twitter Logo PNG and Vector with Transparent Background for Free Download.png" alt="Twitter"></a>
                         <a class="navbar-brand" href="https://www.instagram.com" target="blank"><img src="./img/pinterest Instagram White Icon Instagram Instagram Logo Free Logo Design Template, Instagram Icons, Logo Icons, White Icons PNG and Vector with Transparent Background for Free.png" alt="Instagram"></a>
                     </div>
-                    <div class="col-md text-lg-right">
-                        <a class="dropdown-item text-light" href="about.html">About us</a>
-                        <a class="dropdown-item text-light" href="https://www.jobs.ie" target="blank">Careers</a>
-                        <a class="dropdown-item text-light" href="contact.html">Contact us</a>
+                    <div class="col-md text-lg-right" id="my-drop">
+                        <a class="dropdown-item" href="about.html">About us</a>
+                        <a class="dropdown-item" href="https://www.jobs.ie" target="blank">Careers</a>
+                        <a class="dropdown-item" href="contact.html">Contact us</a>
                     </div>
                 </div>
                 <!-- Copyright MDB https://mdbootstrap.com/docs/jquery/navigation/footer/-->

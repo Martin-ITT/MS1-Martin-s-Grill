@@ -11,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Overlock+SC&family=Overpass+Mono:wght@400;600&family=Ovo&family=Playfair+Display+SC:wght@400;700;900&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
     
+    <script src="./js/subscribe.js"></script>
     <link rel="stylesheet" href=" css/style.css">
     <title>Martin's homepage</title>
+    <link rel="icon" href="./img/martinsLogo.png" type="image/png">
 </head>
 
 <body>
@@ -45,7 +47,9 @@
           </ul>          
         </div>
     </nav>
-   
+    <!-- top button -->
+    <button onclick="topFunction()" id="about-top-btn" title="Go to top">Top</button>
+    <!-- first section-->
     <section id="about-promise">
         <div class="pt-4">
             <div class="container">
@@ -162,17 +166,26 @@
                 <div class="row align-items-center pt-4">
                     <!-- sm to expand on screens from 576px -->
                     <div class="col-md text-lg-left"> 
-                        <button class="btn btn-light button-subscribe">Subscribe</button>
+                        <button class="btn btn-light button-subscribe" onclick="openForm()">Subscribe</button>
+                            <div class="form-popup text-center" id="contactForm">
+                            <form name="subscribeForm" class="form-container" onsubmit="subscribeAlert()">
+                                <h1>Subscribe</h1>
+                                <!-- <label for="email"><b>Email</b></label> -->
+                                <input type="email" placeholder="please enter email" name="email" required>
+                                <button type="submit" class="btn">subscribe</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">not now</button>
+                            </form>
+                        </div>
                     </div>
                     <div class="col-md">
                         <a class="navbar-brand" href="https://www.facebook.com" target="blank"><img src="./img/pinterest Facebook White Icon, Facebook Icons, White Icons, Icon PNG and Vector with Transparent Background for Free Download.png" alt="Facebook"></a>
                         <a class="navbar-brand" href="https://www.twitter.com" target="blank"><img src="./img/pinterest Twitter White Icon, Twitter Icons, White Icons, Twitter Logo PNG and Vector with Transparent Background for Free Download.png" alt="Twitter"></a>
                         <a class="navbar-brand" href="https://www.instagram.com" target="blank"><img src="./img/pinterest Instagram White Icon Instagram Instagram Logo Free Logo Design Template, Instagram Icons, Logo Icons, White Icons PNG and Vector with Transparent Background for Free.png" alt="Instagram"></a>
                     </div>
-                    <div class="col-md text-lg-right">
-                        <a class="dropdown-item text-light" href="about.html">About us</a>
-                        <a class="dropdown-item text-light" href="https://www.jobs.ie" target="blank">Careers</a>
-                        <a class="dropdown-item text-light" href="contact.html">Contact us</a>
+                    <div class="col-md text-lg-right" id="my-drop">
+                        <a class="dropdown-item" href="about.html">About us</a>
+                        <a class="dropdown-item" href="https://www.jobs.ie" target="blank">Careers</a>
+                        <a class="dropdown-item" href="contact.html">Contact us</a>
                     </div>
                 </div>
                 <!-- Copyright MDB https://mdbootstrap.com/docs/jquery/navigation/footer/-->
@@ -181,7 +194,9 @@
             </div> 
         </div>
     </footer>
-    
+
+
+    <script src="./js/about.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>

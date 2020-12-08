@@ -35,6 +35,29 @@ footer img{
     width: 50px;
     height: 50px;
 }
+/* shaking social icons*/
+/* https://www.w3schools.com/howto/howto_css_shake_image.asp */
+footer img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 footer .dropdown-item{
     color: #f8f9fa;
 }
@@ -142,6 +165,27 @@ transform: translateY(0);
 }
 }
 /*about.html*/
+/*  top button https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+#about-top-btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    top: 20px; /* Place the button at the bottom of the page */
+    right: 5px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #343a40; /* Set a background color */
+    color: #f8f9fa; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 9px; /* Increase font size */
+  }
+  
+  #about-top-btn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+/* first section*/
 #about-promise{
     min-height: 900px;
     padding-bottom: 1em;
@@ -165,7 +209,12 @@ transform: translateY(0);
 #about-promise img{
     border-radius: 5px;
     height: 210px;
-}
+    /* zoom animation https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+    transition: transform .2s;
+    }
+#about-promise img:hover {
+        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
 #about-promise .text-cont{
     max-height: 170px;
     max-width: 80%;
@@ -194,7 +243,12 @@ transform: translateY(0);
 }
 #about-team img{
     height: 150px;
+    /* zoom animation https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+    transition: transform .2s;
 }
+#about-team img:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 #about-team .text-cont{
     max-width: 70%;
 }
@@ -246,7 +300,7 @@ transform: translateY(0);
 #contact{
     max-height: 1350px;
     padding-bottom: 1em;
-    background-image: url(../img/bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+    background-image: url(../img/bg-lq-steak-gonzalo-guzman-3997609.png);
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -319,6 +373,14 @@ transform: translateY(0);
     }
     
     /*about.html*/
+    #about-top-btn {
+        top: 30px; /* Place the button at the bottom of the page */
+        right: 10px; /* Place the button 30px from the right */
+        background-color: rgba(0,0,0,0.5); /* Set a background color */
+        padding: 10px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 12px; /* Increase font size */
+      }
     #about-promise{
         min-height: 700px;
     }
@@ -392,6 +454,11 @@ transform: translateY(0);
         font-size: 2em;
     }
     /*about.html*/
+    #about-top-btn {
+        right:15px; /* Place the button 30px from the right */
+        padding: 12px; /* Some padding */
+        font-size: 18px; /* Increase font size */
+      }
     #about-promise h2,
     #about-team h2,
     #about-gallery h2{
@@ -432,3 +499,80 @@ transform: translateY(0);
          height: 400px;
      }
     }
+
+
+/*test*/
+
+
+  
+  /* The popup form - hidden by default */
+  /* position changed https://stackoverflow.com/questions/4463308/position-absolute-div-in-center-of-screen-view*/
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 30px;
+    background-color:  rgba(0,0,0,0.5);
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=email]{
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    color:white;
+  }
+  .form-check label {
+      color: #ffffff;
+  }
+  .form-container h1{
+      color: #ffffff;
+      font-family: 'Overlock SC', Copperlate, Tahoma;
+  }
+  .form-container ::placeholder{
+      color: #ffffff;
+      font-family: 'Overlock SC', Tahoma;
+  }
+  .form-container button{
+    color: #ffffff;
+    font-family: 'Overlock SC', Tahoma;
+}
+  
+  /* When the inputs get focus, do something 
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }*/
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
