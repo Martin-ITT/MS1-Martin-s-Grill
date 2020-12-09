@@ -181,7 +181,10 @@ opacity: 1;
 /* main part with background animation*/
 #home-body {
     min-height: 726px; /* optimalized height for iphone X 375*812*/
-    animation: animate-hero 8s ease-in-out infinite; /* background animation*/
+    animation-name: animate-hero;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* background animation - animation not working on ipad*/
     background-size: cover; /* size of background animation*/
     background-position: 30% 50%; /* backround animation moved */  
 }
