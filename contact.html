@@ -91,12 +91,12 @@
                     </div>
                     <div class="form-group">
                         <label><p>Name</p></label>
-                        <input type="text" class="form-control" placeholder="add name">
+                        <input type="text" class="form-control" placeholder="add name" required>
                     </div>
         
                     <div class="form-group">
                         <label><p>Email</p></label>
-                        <input type="email" class="form-control" placeholder="add email">
+                        <input type="email" class="form-control" placeholder="add email" required>
                         <small id="emailHelp" class="form-text text-muted"><p>We'll never share your email address.</p></small>
                     </div>
                     <div class="form-group">
@@ -106,7 +106,7 @@
 
                     <div class="form-group">
                         <label><p>Message</p></label>
-                        <textarea type="text" class="form-control" placeholder="add message"></textarea>
+                        <textarea type="text" class="form-control" placeholder="add message" required></textarea>
                     </div>
         
                     <div class="form-group">
@@ -176,34 +176,14 @@
         </div>
     </footer>
 
-    <!--Google maps-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script>
-        function initMap(){
-            var options = {
-                zoom:14,
-                center:{lat:53.3402575,lng:-6.2637580}
-            }
-            var map = new
-            google.maps.Map(document.getElementById('map'), options);
-        }
-    </script>
+    <script src="./js/maps.js"></script>
     
    <!-- Slick-->
    <script type="text/javascript" src="slick/slick.min.js"></script>
-
-   <script type="text/javascript">
-       $(document).ready(() => {
-           $('#contact-slideshow .slick').slick({
-             autoplay:true,
-             fade: true,
-             autoplaySpeed: 3000,
-             speed: 2000,
-
-           }); 
-       });
-   </script>
+   <script src="./js/my-slick.js"></script>
+   
 
 </body>
 </html>
