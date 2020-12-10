@@ -1,9 +1,9 @@
 /* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 //Get the button:
-mybutton = document.getElementById("about-top-btn");
+var mybutton = document.getElementById("about-top-btn");
 
 // When the user scrolls down 300px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction();};
 
 function scrollFunction() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {

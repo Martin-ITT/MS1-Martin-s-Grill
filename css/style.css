@@ -223,13 +223,13 @@ opacity: 1;
 }
 @keyframes animate-hero {
     0%{
-        background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg);
+        background-image: url(../img/index-milkshake.pexels-sanket-sawant-2340204.jpg);
     }
     50%{ 
-        background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);      
+        background-image: url(../img/index\ -thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);      
     }
     100%{
-        background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg);
+        background-image: url(../img/index-milkshake.pexels-sanket-sawant-2340204.jpg);
     }
 }
 @-webkit-keyframes animate-hero {
