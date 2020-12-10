@@ -180,10 +180,13 @@ opacity: 1;
 
 /* main part with background animation*/
 #home-body {
-    min-height: 726px; /* optimalized height for iphone X 375*812*/
-    background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);
-    -webkit-animation: animate-hero 8s ease-in-out infinite;
-    animation: animate-hero 8s ease-in-out infinite; /* background animation - animation not working on ipad*/
+    /*min-height: 726px; /*optimalized height for iphone X 375*812*/
+    /* background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg); */
+    /* -webkit-animation-name: animate-hero 10s ease-in-out infinite; */
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation: animate-hero 10s ease-in-out infinite; /* background animation - animation not working on ipad*/
     background-size: cover; /* size of background animation*/
     background-position: 30% 50%; /* backround animation moved */  
 }
@@ -209,6 +212,7 @@ opacity: 1;
         background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg);
     }
 }
+
 /*weclome text container */ 
 #home-body div{
     width: 60%; /* ideal size of welcome text - checked for responsive design - effectign h2&h4 position on screen */
