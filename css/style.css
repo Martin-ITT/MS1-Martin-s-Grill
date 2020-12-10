@@ -26,6 +26,19 @@
 a:hover { /* keep same cursor on the links */
     cursor: context-menu;
 }
+a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
 header .nav-item li:hover{ /* keep same cursor on the navbar list - blinking cursor problem*/
     cursor: context-menu;
 }
@@ -55,10 +68,28 @@ nav .dropdown-item {
     background-color: #9a9da0;    
 }
 /* ---------------------- navbar fonts -------------------------------- */
-.navbar a
-{
+.navbar a{
     font-family: 'Overlock SC', Copperlate, Tahoma;
     font-size: 1.4em;
+    /*underline animation https://tobiasahlin.com/blog/css-trick-animating-link-underlines */
+    position: relative;
+    text-decoration: none;
+}
+.navbar a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #9a9da0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 /* ------------------------------ FOOTER ------------------------------- */
@@ -488,6 +519,8 @@ transform: translateY(0);
 }
 #contact-form input[type=text],
 #contact-form input[type=email],
+#contact-form input[type=date],
+#contact-form input[type=time],
 #contact-form textarea[type=text],
 #contact-form select{
     border: none;
