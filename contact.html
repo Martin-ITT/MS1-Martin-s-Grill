@@ -85,7 +85,7 @@
     <hr>
         <div id="contact-form">
             <div class="container">
-                <form>
+                <form name="contact-form" onsubmit="formSubmitAlert()">
                     <div class="container text-center text-white">
                         <h2>Contact us</h2>
                     </div>
@@ -120,7 +120,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center pt-2 pb-4">
-                                <button class="btn btn-light border border-dark">Submit</button>
+                                <button type="submit" class="btn btn-light border border-dark">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                     </div>
                     <div class="col-md text-lg-right" id="my-drop">
                         <a class="dropdown-item" href="about.html">About us</a>
-                        <a class="dropdown-item" href="https://www.jobs.ie" target="blank">Careers</a>
+                        <a class="dropdown-item" href="https://www.jobs.ie" target="blank" onclick="openCareers()">Careers</a>
                         <a class="dropdown-item" href="contact.html">Contact us</a>
                     </div>
                 </div>

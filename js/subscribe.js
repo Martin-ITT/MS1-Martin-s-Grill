@@ -12,3 +12,13 @@ function openForm() {
  function subscribeAlert() {
     alert("Thank you for subscribing!")
  }
+
+ /* Careers alert*/
+ function openCareers() {
+  alert("Please find Martin's on jobs.ie to see our latest vacancies.")
+}
+
+/* Contact us submit alert */
+function formSubmitAlert() {
+  alert("Your message has been sent.")
+}

@@ -180,7 +180,7 @@ opacity: 1;
 
 /* main part with background animation*/
 #home-body {
-    /*min-height: 726px; /*optimalized height for iphone X 375*812*/
+    min-height: 726px; /*optimalized height for iphone X 375*812*/
     /* background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg); */
     /* -webkit-animation-name: animate-hero 10s ease-in-out infinite; */
     -webkit-animation-duration: 10s;
