@@ -17,7 +17,7 @@ Main requirements:
 
 1. Strategy - to introduce suitable website for local takeaway restaurant to attract potentional customers and stand out from competitors by creating a website with a proffesional look. This will allow company to grow.
 
-1. Scope - to include restaurant menu, contact formular and current offers. Order online feature will be added later.
+1. Scope - to include restaurant menu, contact formular and current offers. To introduce our team and our believes.
 
 1. Structure - to fulfil information architecture and to use HTML semantic elements so the search engines can find relevant informations. Links, pictures and other functions to be logically grouped.
 
@@ -29,7 +29,9 @@ Main requirements:
 
 ## User stories
 
-1. As a business owner I need a website which will provide all relevant information - our products, store locantions and opening time.
+1. As a business owner I need a website which will provide all relevant information - our products, store locantion and opening time.
+
+1. As a business owner I need good looking home page with direct option to order. 
 
 1. As a business owner I would like to be accesible throught my website so the customer can contact me and share their ideas or feedback.
 
@@ -38,6 +40,8 @@ Main requirements:
 1. I am a customer who compares prices with other restaurants so I am always looking for a menu page.
 
 1. I am a culinary student looking for a part time position in a restaurant and I'd like to know how can I apply here.
+
+1. I often use social media to find more details about company so I am looking for connections there.
 
 ## Design process
 

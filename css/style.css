@@ -212,35 +212,31 @@ opacity: 1;
 /* main part with background animation*/
 #home-body {
     min-height: 726px; /*optimalized height for iphone X 375*812*/
-    /* background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg); */
-    /* -webkit-animation-name: animate-hero 10s ease-in-out infinite; */
-    -webkit-animation-duration: 10s;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation: animate-hero 10s ease-in-out infinite;
     animation: animate-hero 10s ease-in-out infinite; /* background animation - animation not working on ipad*/
     background-size: cover; /* size of background animation*/
     background-position: 30% 50%; /* backround animation moved */  
 }
 @keyframes animate-hero {
     0%{
-        background-image: url(../img/index-milkshake.pexels-sanket-sawant-2340204.jpg);
+        background-image: url(../img/index-about-milkshake-pexels-sanket-sawant-2340204.jpg);
     }
     50%{ 
-        background-image: url(../img/index\ -thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);      
+        background-image: url(../img/index-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);      
     }
     100%{
-        background-image: url(../img/index-milkshake.pexels-sanket-sawant-2340204.jpg);
+        background-image: url(../img/index-about-milkshake-pexels-sanket-sawant-2340204.jpg);
     }
 }
 @-webkit-keyframes animate-hero {
     0%{
-        background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg);
+        background-image: url(../img/index-about-milkshake-pexels-sanket-sawant-2340204.jpg);
     }
     50%{ 
-        background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);      
+        background-image: url(../img/index-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);      
     }
     100%{
-        background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg);
+        background-image: url(../img/index-about-milkshake-pexels-sanket-sawant-2340204.jpg);
     }
 }
 
@@ -338,7 +334,7 @@ transform: translateY(0);
 /* first section - promise*/
 #about-promise{
     padding-bottom: 1em;
-    background-image: url(../img/bg-lq-burger\ light-pexels-dana-tentis-750073-min.png);
+    background-image: url(../img/bg-lq-burger-light-pexels-dana-tentis-750073-min.png);
     background-size: cover;
     background-position: 60% 100%;
     color: black;
@@ -376,7 +372,7 @@ transform: translateY(0);
 #about-team{
     /*min-height: 930px;*/
     padding-bottom: 1em;;
-    background-image: url(../img/bg-team-restaurant-103038-pxhere.png);
+    background-image: url(../img/bg-lq-team-restaurant-103038-pxhere.png);
     background-size: cover;
     background-position: 50% 50%;
     color: black;
@@ -419,7 +415,7 @@ transform: translateY(0);
 #about-gallery{
     /*min-height: 300px;*/
     padding-bottom: 1em;
-    background-image: url(../img/bg-decor-background-pexels-pixabay-276514-min.png);
+    background-image: url(../img/bg-lq-decor-background-pexels-pixabay-276514-min.png);
     background-size: cover;
     color: black;
     text-align: center;
@@ -440,7 +436,7 @@ transform: translateY(0);
     height: 726px;
     background-size: cover;
     text-align: center;
-    background-image: url(../img/steak-meat-1259012-pxhere\ -\ Copy.jpg);
+    background-image: url(../img/bg-lq-steak-meat-1259012-pxhere.jpg);
    /* animation: animate-menu 8s ease-in-out infinite;
 }
 @keyframes animate-menu {
@@ -536,6 +532,10 @@ transform: translateY(0);
 }
 #contact-form ::placeholder{
     color: #ffffff;
+}
+/*Changing calender and time icon color https://www.codegrepper.com/code-examples/css/input+date+icon+color+change*/
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }
 /*
 #contact-slideshow div {
