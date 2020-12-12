@@ -4,28 +4,32 @@
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #343a40; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #343a40;
     border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background:  #808080; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #808080;
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #527c93; 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #527c93;
+}
+
 /* ---------------------- CURSORS over links & btns ------------------- */
-a:hover { /* keep same cursor on the links */
+/* keep same cursor on the links */
+a:hover {
     cursor: context-menu;
 }
+
+/* insert content before a element
 a::before {
     content: "";
     position: absolute;
@@ -38,43 +42,50 @@ a::before {
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
   }
-
-header .nav-item li:hover{ /* keep same cursor on the navbar list - blinking cursor problem*/
-    cursor: context-menu;
-}
-.btn:not(:disabled):not(.disabled){ /* keep same cursor on buttons*/
+*/
+/* keep same cursor on the navbar list - blinking cursor problem*/
+header .nav-item li:hover {
     cursor: context-menu;
 }
 
-/* ----------------- NAVBAR style & logo animation -------------------- */
-.navbar img { /* logo size in navbar - effecting size of the navbar*/
+/* keep same cursor on buttons*/
+.btn:not(:disabled):not(.disabled) {
+    cursor: context-menu;
+}
+
+/* ---------------------- NAVBAR -------------------------------------- */
+/* logo size in navbar - effecting size of the navbar*/
+.navbar img {
     width: 60px;
     height: 60px;
-    /* --------------------- navbar logo animation -------------------- */
-    /* https://stackoverflow.com/questions/16771225/css3-rotate-animation */
-   /* -webkit-animation:spin 4s linear infinite; /*Safari 4.0 & Chrome 4.0 - name duration timing-function(linear -same speed from start to end) iteration-count(for ever)
-   -moz-animation:spin 4s linear infinite; /* same for firefox 5.0 */
-    animation:spin 4s linear infinite; /*  name duration timing-function(linear -same speed from start to end) iteration-count(for ever) */
+    animation: spin 4s linear infinite;
 }
-    /* @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } } OUTDATED
-    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } } */
-    @keyframes spin { 100% { /* -webkit-transform: rotate(360deg); */ transform:rotate(360deg); } /* same start & end */
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
-nav .dropdown-menu{
+
+/* navbar colors */
+nav .dropdown-menu {
     background-color: #9a9da0;
 }
+
 nav .dropdown-item {
     padding-left: 10px;
-    background-color: #9a9da0;    
+    background-color: #9a9da0;
 }
-/* ---------------------- navbar fonts -------------------------------- */
-.navbar a{
+
+/* navbar fonts */
+.navbar a {
     font-family: 'Overlock SC', Copperlate, Tahoma;
     font-size: 1.4em;
-    /*underline animation https://tobiasahlin.com/blog/css-trick-animating-link-underlines */
+    /* underline animation */
     position: relative;
     text-decoration: none;
 }
+
 .navbar a::before {
     content: "";
     position: absolute;
@@ -87,252 +98,304 @@ nav .dropdown-item {
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
 }
+
 .navbar a:hover::before {
     visibility: visible;
     transform: scaleX(1);
 }
 
 /* ------------------------------ FOOTER ------------------------------- */
-    /* footer social icons*/
-.navbar-brand{
-    margin-right: 0; /* overiding BS4 values*/
+/* footer social icons*/
+.navbar-brand {
+    /* overiding BS4 values*/
+    margin-right: 0;
     margin: 5px;
 }
 
-footer img{
+footer img {
     width: 40px;
     height: 40px;
 }
+
 /* shaking social icons*/
-/* https://www.w3schools.com/howto/howto_css_shake_image.asp */
 footer img:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 0.5s;
-  
-    /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
-  }
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
 /* right side menu style */
-footer #my-drop a{
+footer #my-drop a {
     font-family: arial, Copperlate, Tahoma;
 }
+
 footer .dropdown-item {
-    padding: 3px; /* overiding BS4 style*/
+    /* overiding BS4 style*/
+    padding: 3px;
 }
-footer .dropdown-item{
+
+footer .dropdown-item {
     color: #f8f9fa;
 }
-footer .dropdown-item:visited{
+
+footer .dropdown-item:visited {
     background-color: #343a40;
 }
-footer .dropdown-item:hover{
+
+footer .dropdown-item:hover {
     background-color: #343a40;
 }
-footer p{ /* p elemnt margind creating white strip at the bottom of the screen */
+
+/* p elemnt margind creating white strip at the bottom of the screen */
+footer p {
     margin: 0px;
     padding: 0px;
     font-size: .7em;
 }
 
 /* The popup form - hidden by default */
-/* position changed https://stackoverflow.com/questions/4463308/position-absolute-div-in-center-of-screen-view*/
 .form-popup {
-display: none; /* form open - document.getElementById("contactForm").style.display = "block"; */
-position: fixed; /* form to be dislayed at the same place */
-top: 50%; /* https://stackoverflow.com/questions/2005954/center-a-positionfixed-element */
-left: 50%;
-transform: translate(-50%, -50%); /* aligns to the centre - This property allows you to rotate, scale, move, skew, etc., https://caniuse.com/transforms2d*/
-border: 1px solid #f1f1f1;
-z-index: 1000; /* layer priority*/
-  }
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #f1f1f1;
+    z-index: 1000;
+}
+
 /* Add styles to the form container */
 .form-container {
-max-width: 300px;
-padding: 30px;
-background-color:  rgba(0,0,0,0.5); /* transparency */
+    max-width: 300px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 /* 90%-width input fields */
-.form-container input[type=email]{
-width: 90%;
-padding: 15px;
-margin: 5px 0 22px 0;
-border: none;
-background: rgba(0,0,0,0.5);
-color:white;
+.form-container input[type=email] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
 }
+
 /* T&C label text color */
 .form-check label {
     color: #ffffff;
 }
+
 /* font & color style h1 */
-.form-container h1{
+.form-container h1 {
     color: #ffffff;
     font-family: 'Overlock SC', Copperlate, Tahoma;
 }
-/* please ente email placeholder */
-.form-container ::placeholder{
+
+/* please enter email placeholder */
+.form-container ::placeholder {
     color: #ffffff;
     font-family: 'Overlock SC', Tahoma;
 }
+
 /* subscribe / not now button style*/
 .form-container .btn {
-background-color: #4CAF50;
-color: white;
-font-family: 'Overlock SC', Tahoma;
-padding: 16px 20px;
-border: none;
-width: 90%;
-margin-bottom:10px;
-opacity: 0.8;
+    background-color: #4CAF50;
+    color: white;
+    font-family: 'Overlock SC', Tahoma;
+    padding: 16px 20px;
+    border: none;
+    width: 90%;
+    margin-bottom: 10px;
+    opacity: 0.8;
 }
+
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-background-color: red;
+    background-color: red;
 }
+
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-opacity: 1;
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
 }
 
 /* --------------------------------------------------- index.html --------------------------------------------- */
-
 /* main part with background animation*/
 #home-body {
     min-height: 90vh;
-    -webkit-animation: animate-hero 10s ease-in-out infinite;
-    animation: animate-hero 10s ease-in-out infinite; /* background animation - animation not working on ipad*/
-    background-size: cover; /* size of background animation*/
-    background-position: 30% 50%; /* backround animation moved */  
+    animation: animate-hero 10s ease-in-out infinite;
+    background-size: cover;
+    background-position: 30% 50%;
 }
+
 @keyframes animate-hero {
-    0%{
+    0% {
         background-image: url(../img/index-about-milkshake-pexels-sanket-sawant-2340204.jpg);
     }
-    50%{ 
-        background-image: url(../img/index-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);      
+
+    50% {
+        background-image: url(../img/index-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);
     }
-    100%{
-        background-image: url(../img/index-about-milkshake-pexels-sanket-sawant-2340204.jpg);
-    }
-}
-@-webkit-keyframes animate-hero {
-    0%{
-        background-image: url(../img/index-about-milkshake-pexels-sanket-sawant-2340204.jpg);
-    }
-    50%{ 
-        background-image: url(../img/index-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg);      
-    }
-    100%{
+
+    100% {
         background-image: url(../img/index-about-milkshake-pexels-sanket-sawant-2340204.jpg);
     }
 }
 
-/*weclome text container */ 
-#home-body div{
-    width: 60%; /* ideal size of welcome text - checked for responsive design - effectign h2&h4 position on screen */
+/*weclome text container */
+#home-body div {
+    width: 60%;
     text-align: center;
-    padding-top: 30vh; /* text pushed down - checked for responsive design*/
-    text-shadow: 0 0 5px rgba(255,255,255,.8), 0 0 5px rgba(255,255,255,.8); /* text shadow for easier readability */
-    }  
+    padding-top: 30vh;
+    text-shadow: 0 0 5px rgba(255, 255, 255, .8), 0 0 5px rgba(255, 255, 255, .8);
+}
 
 /* welcome text styled & animated */
-/* Main title animation with a css help courtesy of my classmate Miranda https://github.com/mkthewlis */
-/* added delay https://css-tricks.com/a-new-way-to-delay-keyframes-animations/*/
-#home-body h2 { 
-    font-family: 'Overlock SC', Copperlate, Tahoma; /*The font-size and font-family values are required. If one of the other values is missing, their default value are used. */
+#home-body h2 {
+    font-family: 'Overlock SC', Copperlate, Tahoma;
     font-size: 2.4em;
     font-weight: 600;
     animation: moveleft 4s ease-out;
 }
+
 @keyframes moveleft {
-  0%, 25%, 50% {
-    opacity: 0;
-    transform: translateX(-30rem);
-  }
-  80% {
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+
+    0%,
+    25%,
+    50% {
+        opacity: 0;
+        transform: translateX(-30rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
+
 /*hungry part animated*/
-#home-body #welcome-text h4{
+#home-body #welcome-text h4 {
     font-size: 1.8em;
     font-family: 'Original Surfer', Copperlate, Tahoma;
     animation: movedown 2s ease-out;
 }
+
 @keyframes movedown {
     0% {
-      opacity: 0;
-      transform: translateY(-3rem);
+        opacity: 0;
+        transform: translateY(-3rem);
     }
+
     80% {
-      transform: translateY(3rem);
+        transform: translateY(3rem);
     }
+
     100% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
+
 /* order now button animated*/
-#home-body #button-order{
+#home-body #button-order {
     font-size: 1.1em;
     font-family: 'Overpass Mono', Copperlate, Tahoma;
     animation: movetop 5s ease-out;
-    }
+}
+
 @keyframes movetop {
-0%, 25%, 70% {
-opacity: 0;
-transform: translateY(10rem);
-}
-80% {
-transform: translateY(1rem);
-}
-100% {
-opacity: 1;
-transform: translateY(0);
-}
+
+    0%,
+    25%,
+    70% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    80% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ------------------------------------------ about.html ------------------------------------------------------------ */
-
-/*  top button https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+/*  top button */
 #about-top-btn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    top: 20px; /* Place the button at the bottom of the page */
-    right: 5px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #343a40; /* Set a background color */
-    color: #f8f9fa; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 5px; /* Some padding */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 9px; /* Increase font size */
-  }
-  #about-top-btn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 5px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #343a40;
+    color: #f8f9fa;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 9px;
+}
+
+#about-top-btn:hover {
+    background-color: #555;
+}
 
 /* first section - promise*/
-#about-promise{
+#about-promise {
     padding-bottom: 1em;
     background-image: url(../img/bg-lq-burger-light-pexels-dana-tentis-750073-min.png);
     background-size: cover;
@@ -340,90 +403,100 @@ transform: translateY(0);
     color: black;
     text-align: center;
 }
+
 /* h2 elements style */
 #about-promise h2 {
     font-size: 1.3em;
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
     font-weight: 600;
 }
+
 /* h4 elements style */
-#about-promise h4{
+#about-promise h4 {
     font-size: 1.2em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
+
 /* image style */
-#about-promise img{
-    border-radius: 5px; /* cuts sharp corners*/
-    height: 180px; /* picture size */
-    /* zoom animation https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
-    transition: transform .5s; /* zoom effect time */
-    }
-/* zoom on hover */
+#about-promise img {
+    border-radius: 5px;
+    height: 180px;
+    /* to be zoomed on hover with :hover style*/
+    transition: transform .5s;
+}
+
 #about-promise img:hover {
-        transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
+    transform: scale(1.1);
+}
+
 /* text around pictures */
-#about-promise .text-cont{
-    /*max-height: 170px;*/
+#about-promise .text-cont {
     max-width: 80%;
 }
 
 /* second section - team */
-#about-team{
-    /*min-height: 930px;*/
-    padding-bottom: 1em;;
+#about-team {
+    padding-bottom: 1em;
+    ;
     background-image: url(../img/bg-lq-team-restaurant-103038-pxhere.png);
     background-size: cover;
     background-position: 50% 50%;
     color: black;
     text-align: center;
 }
+
 /* text styles */
-#about-team h2,
-#about-gallery h2{
+#about-team h2 {
     font-size: 1.3em;
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
     font-weight: 600;
 }
-#about-team h4{
+
+#about-team h4 {
     font-size: 1.4em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
-#about-team h6{
+
+#about-team h6 {
     font-size: 1.2em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
-#about-team p{
+
+#about-team p {
     font-size: 1.1em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
-#about-team img{
+
+#about-team img {
     height: 170px;
-    /* zoom animation https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+    /* to be zoomed on hover with :hover style*/
     transition: transform .5s;
 }
-/* zoom animation*/
+
 #about-team img:hover {
     transform: scale(1.1);
-  }
+}
+
 /* text around pictures */
-#about-team .text-cont{
+#about-team .text-cont {
     max-width: 70%;
 }
 
 /* third section - gallery*/
-#about-gallery{
+#about-gallery {
     padding-bottom: 1em;
     background-image: url(../img/bg-lq-decor-background-pexels-pixabay-276514-min.png);
     background-size: cover;
     color: black;
     text-align: center;
 }
+
 /*corners cut on slideshow*/
-#about-gallery #carouselExampleIndicators div{
+#about-gallery #carouselExampleIndicators div {
     border-radius: 10px;
 }
-#about-gallery h2{
+
+#about-gallery h2 {
     font-size: 1.3em;
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
     font-weight: 600;
@@ -431,385 +504,413 @@ transform: translateY(0);
 
 /* --------------------------------------------- menu.html ------------------------------------------------- */
 /* whole section */
-#menu-menu{
+#menu-menu {
     height: 726px;
     background-size: cover;
     text-align: center;
     background-image: url(../img/bg-lq-steak-meat-1259012-pxhere.jpg);
-   /* animation: animate-menu 8s ease-in-out infinite;
 }
-@keyframes animate-menu {
-    0%,100%{
-        background-image: url(../img/00-thimo-van-leeuwen-GnoMX4Q-7Vg-unsplash.jpg)}
-    33%{
-        background-image: url(../img/hero-pexels-valeria-boltneva-1251198.jpg);
-    }
-    66%{
-        background-image: url(../img/milkshake.pexels-sanket-sawant-2340204.jpg); 
-    } */
-}
+
 /* menu container */
-#menu-list{
+#menu-list {
     width: 80%;
     height: 100%;
     margin: auto;
     padding-top: 50px;
     text-align: center;
-    color: /*#BE9E6A*/ #9a9da0;
-    background-color: rgba(0,0,0,0.5);
+    color: #9a9da0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 /* menu text style */
-#menu-list h2{
+#menu-list h2 {
     font-size: 1.3em;
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
     font-weight: 500;
 }
-#menu-list h4{
+
+#menu-list h4 {
     padding-top: 20px;
     font-size: 1.2em;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
-#menu-list h6{
+
+#menu-list h6 {
     font-size: .9em;
     font-family: 'Ovo', Copperlate, Tahoma;
-   
 }
+
 /* ----------------------------------------------- contact.html ------------------------------------------------- */
 /* whole section */
-#contact{
+#contact {
     padding-bottom: 1em;
     background-image: url(../img/bg-lq-steak-gonzalo-guzman-3997609.png);
     background-size: cover;
 }
-#contact h4{
+
+#contact h4 {
     font-family: 'Ovo', Copperlate, Tahoma;
 }
-#contact h6{
+
+#contact h6 {
     font-family: 'Ovo', Copperlate, Tahoma;
 }
-/* map container */ 
-#map{
+
+/* map container */
+#map {
     min-width: 300px;
     height: 300px;
     border-radius: 5px;
 }
-/* TRANSPARENT FORM */
-/*https://www.youtube.com/watch?v=OB-75ysZhfY*/
-#contact-form{
+
+/* Contact Us form*/
+#contact-form {
     width: 90%;
     padding-top: 50px;
     margin: auto;
     border-radius: 5px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
-#contact-form h2{
+
+#contact-form h2 {
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
 }
-#contact-form p{
+
+#contact-form p {
     color: #ffffff;
     margin: 0;
     padding: 0;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
+
 #contact-form input[type=text],
 #contact-form input[type=email],
 #contact-form input[type=date],
 #contact-form input[type=time],
 #contact-form textarea[type=text],
-#contact-form select{
+#contact-form select {
     border: none;
     border-bottom: 1px solid #ffffff;
     background-color: transparent;
     font-family: 'Ovo', Copperlate, Tahoma;
 }
-#contact-form .form-control{
+
+#contact-form .form-control {
     color: #ffffff;
 }
-#contact-form .form-control option{
+
+#contact-form .form-control option {
     color: #000000;
 }
-#contact-form ::placeholder{
+
+#contact-form ::placeholder {
     color: #ffffff;
 }
-/*Changing calender and time icon color https://www.codegrepper.com/code-examples/css/input+date+icon+color+change*/
+
+/*Changing calender and time icon color */
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
-/*
-#contact-slideshow div {
-    width: 100%;
-    height: 100px;
-}
-#contact-slideshow img {
-    max-width: 100%;
-    height: auto;
-    } */
 
 /* --------------------------------------------------------------------------- RESPONSIVE DESIGN ------------------------------------------------------------- */
 
 /* ----------------------- screens larger than 576px ------------------------ */
 @media(min-width: 576px) {
+
     /* --------------index.html ---------------*/
     #home-body {
         background-position: 25% 50%;
     }
+
     #home-body #welcome-text h2 {
         font-size: 1.8em;
         font-weight: 550;
     }
-    #home-body #welcome-text h4{
+
+    #home-body #welcome-text h4 {
         font-size: 1.3em;
-        letter-spacing: 2px;  
+        letter-spacing: 2px;
     }
-    #home-body #button-order{
+
+    #home-body #button-order {
         font-size: 1.2em;
     }
 
     /* ------------ about.html --------------- */
-    /* larger  top button*/
     #about-top-btn {
-        top: 30px; /* Place the button at the bottom of the page */
-        right: 10px; /* Place the button 30px from the right */
-        background-color: rgba(0,0,0,0.5); /* Set a background color */
-        padding: 10px; /* Some padding */
-        border-radius: 10px; /* Rounded corners */
-        font-size: 12px; /* Increase font size */
+        top: 30px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
     }
-    /* font styles */
-    #about-promise h2{
+
+    #about-promise h2 {
         font-size: 1.6em;
         font-weight: 700;
     }
-    #about-promise img{
+
+    #about-promise img {
         height: 200px;
     }
-    #about-promise .text-cont{
+
+    #about-promise .text-cont {
         max-width: 60%;
     }
-    #about-team h2{
+
+    #about-team h2 {
         font-size: 1.6em;
         font-weight: 700;
     }
-    #about-team h4{
+
+    #about-team h4 {
         font-weight: 600;
     }
-    #about-team h6{
+
+    #about-team h6 {
         font-weight: 600;
     }
-    #about-team p{
+
+    #about-team p {
         font-weight: 600;
     }
-    #about-team img{
+
+    #about-team img {
         height: 200px;
     }
-    #about-gallery h2{
+
+    #about-gallery h2 {
         font-size: 1.6em;
         font-weight: 700;
     }
 
     /* ------------- menu.html -------------- */
-    #menu-menu{
+    #menu-menu {
         height: 800px;
     }
-    /*section padding*/
-    #menu-list{
+
+    #menu-list {
         padding-top: 50px;
     }
-    /* font styles */
-    #menu-list h2{
+
+    #menu-list h2 {
         font-size: 1.6em;
         font-weight: 700;
     }
-    #menu-list h4{
+
+    #menu-list h4 {
         font-size: 1.2em;
         font-weight: 600;
     }
-    #menu-list h6{
+
+    #menu-list h6 {
         font-size: .9em;
         font-weight: 700;
     }
 
-/* ----------------------- screens larger than 768px ------------------------ */
-@media(min-width: 768px) {
-    /* ------------------- general ------------------- */
-    /* larger social media icons */
-    footer img{
-        width: 50px;
-        height: 50px;
+    /* ----------------------- screens larger than 768px ------------------------ */
+    @media(min-width: 768px) {
+
+        /* ------------------- general ------------------- */
+        footer img {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* ----------------- index.html ------------------ */
+        #home-body #welcome-text {
+            letter-spacing: 5px;
+            line-height: 60px;
+        }
+
+        #home-body #welcome-text h2 {
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        #home-body #welcome-text h4 {
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        /* -------------- about.html ----------------------- */
+        #about-promise h2,
+        #about-team h2,
+        #about-gallery h2 {
+            font-size: 1.8em;
+        }
+
+        #about-promise h4 {
+            font-size: 1.6em;
+        }
+
+        #about-promise .text-cont {
+            max-width: 40%;
+        }
+
+        #about-team {
+            min-height: 500px;
+        }
+
+        #about-gallery .container {
+            max-width: 70%;
+        }
+
+        /* ---------------- menu.html ----------------------- */
+        #menu-list h2 {
+            font-size: 2em;
+            font-weight: 800;
+            letter-spacing: 5px;
+        }
+
+        #menu-list h4 {
+            font-size: 1.6em;
+            letter-spacing: 3px;
+        }
+
+        #menu-list h6 {
+            font-size: 1.1em;
+            letter-spacing: 3px;
+        }
+
+        /* ---------------- contact.html --------------------- */
+        #contact-map {
+            padding-top: 10px;
+        }
     }
 
-    /* ----------------- index.html ------------------ */
-   
-    #home-body #welcome-text {
-        letter-spacing: 5px;
-        line-height: 60px;
-    } 
-    #home-body #welcome-text h2 {
-        font-size: 2em;
-        font-weight: 600;
-    }
-    #home-body #welcome-text h4{
-        font-size: 1.5em;
-        font-weight: 500;
+    /* ------------------------screens larger than 1024 ------- */
+    @media(min-width: 1020px) {
+
+        /* ------------ menu.html ------------------ */
+        #menu-menu {
+            height: 1156px;
+        }
+
+        #menu-list {
+            padding-top: 150px;
+        }
+
+        /* ----------- contact.html --------------- */
+        #contact {
+            height: 1156px;
+        }
+
     }
 
-    /* -------------- about.html ----------------------- */
-    #about-promise h2,
-    #about-team h2,
-    #about-gallery h2{
-        font-size: 1.8em;
-    }
-    #about-promise h4{
-        font-size: 1.6em;
-    }
-    #about-promise .text-cont{
-        max-width: 40%;
-    }
-    #about-team{
-        min-height: 500px;
-    }
-    #about-gallery .container{
-        max-width: 70%;
-    }
-    
-    /* ---------------- menu.html ----------------------- */
-    /*#menu-menu{
-        height: 90vh;
-    }*/
-    /* font styles */
-    #menu-list h2{
-        font-size: 2em;
-        font-weight: 800;
-        letter-spacing: 5px;
-    }
-    #menu-list h4{
-        font-size: 1.6em;
-        letter-spacing: 3px;
-    }
-    #menu-list h6{
-        font-size: 1.1em;
-        letter-spacing: 3px;
+    /* ----------------------- screens larger than 1200px ------------------------ */
+    @media(min-width: 1200px) {
+
+        /* ------------------- index.html -------------------- */
+        #home-body div {
+            width: 50%;
+        }
+
+        #home-body #welcome-text h2 {
+            font-size: 2.4em;
+            font-weight: 700;
+            letter-spacing: 7px;
+            line-height: 70px;
+        }
+
+        #home-body #welcome-text h4 {
+            font-size: 2em;
+        }
+
+        /* --------------------- about.html -------------------- */
+        #about-top-btn {
+            right: 15px;
+            padding: 12px;
+            font-size: 18px;
+        }
+
+        #about-promise h2,
+        #about-team h2,
+        #about-gallery h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        #about-promise h4 {
+            font-size: 2em;
+        }
+
+        #about-promise img {
+            height: 250px;
+        }
+
+        #about-promise img:hover {
+            transform: scale(1.2);
+        }
+
+        #about-team {
+            padding-top: 20px;
+        }
+
+        #about-team img {
+            height: 250px;
+        }
+
+        /* ---------------- menu.html ----------------------- */
+        #menu-menu {
+            height: 90vh;
+        }
+
+        #menu-list {
+            padding-top: 3vh;
+        }
+
+        #menu-list h2 {
+            letter-spacing: 7px;
+        }
+
+        #menu-list h4 {
+            letter-spacing: 5px;
+        }
+
+        #menu-list h6 {
+            letter-spacing: 5px;
+        }
+
     }
 
-    /* ---------------- contact.html --------------------- */
-    /* map container */ 
-    #contact-map{
-        padding-top: 10px;
-    }
-}
-/* ------------------------screens larger than 1024 ------- */
-@media(min-width: 1020px){
-    /* ------------ menu.html ------------------ */
-    #menu-menu{
-        height: 1156px;
-    }
-    #menu-list{
-        padding-top: 150px;
-    }
-    /* ----------- contact.html --------------- */
-    #contact{
-        height: 1156px;
-    }
+    /* ----------------------- screens larger than 1600px ------------------------ */
+    @media(min-width: 1600px) {
 
-}
+        /* --------------- index.html ------------------------- */
+        #home-body #welcome-text h2 {
+            font-size: 3em;
+            letter-spacing: 10px;
+            line-height: 80px;
+        }
 
-/* ----------------------- screens larger than 1200px ------------------------ */
-@media(min-width: 1200px){
-   
-    /* ------------------- index.html -------------------- */
-    #home-body div{
-        width: 50%;
-    }
-    #home-body #welcome-text h2 {
-        font-size: 2.4em;
-        font-weight: 700;
-        letter-spacing: 7px;
-        line-height: 70px;
-    }
-    #home-body #welcome-text h4{
-        font-size: 2em;
-    }
+        /* ------------------- about.html --------------------- */
+        #about-promise h2,
+        #about-team h2,
+        #about-gallery h2 {
+            font-size: 3em;
+        }
 
-    /* --------------------- about.html -------------------- */
-    #about-top-btn {
-        right:15px; /* Place the button 30px from the right */
-        padding: 12px; /* Some padding */
-        font-size: 18px; /* Increase font size */
-    }
-    #about-promise h2,
-    #about-team h2,
-    #about-gallery h2{
-        font-size: 2.5em;
-        font-weight: 700;
-    }
-    #about-promise h4{
-        font-size: 2em;
-    }
-    #about-promise img{
-        height: 250px;
-    }
-    #about-promise img:hover {
-        transform: scale(1.2);
-    }
-    #about-team{
-        padding-top: 20px;
-    }
-    #about-team img{
-        height: 250px;
-    }
+        #about-promise h4 {
+            font-size: 2.4em;
+        }
 
-     /* ---------------- menu.html ----------------------- */
-     #menu-menu{
-        height: 90vh;
-    }
-    #menu-list{
-        padding-top: 3vh;
-    }
-    /* font styles */
-    #menu-list h2{
-        letter-spacing: 7px;
-    }
-    #menu-list h4{
-        letter-spacing: 5px;
-    }
-    #menu-list h6{
-        letter-spacing: 5px;
-    }
-    
-}
+        #about-promise img {
+            height: 300px;
+        }
 
-/* ----------------------- screens larger than 1600px ------------------------ */
-@media(min-width: 1600px){  
-    /* --------------- index.html ------------------------- */
-    #home-body #welcome-text h2 {
-        font-size: 3em;
-        letter-spacing: 10px;
-        line-height: 80px;
-    }
-     /* ------------------------- about.html ---------------- */
-     #about-promise h2,
-     #about-team h2,
-     #about-gallery h2{
-         font-size: 3em;
-     }
-     #about-promise h4{
-         font-size: 2.4em;
-     }
-     #about-promise img{
-         height: 300px;
-     }
+        /* ---------------- menu.html ----------------------- */
+        #menu-list h2 {
+            letter-spacing: 9px;
+        }
 
-    /* ---------------- menu.html ----------------------- */
-    /* font styles */
-    #menu-list h2{
-        letter-spacing: 9px;
-    }
-    #menu-list h4{
-        letter-spacing: 7px;
-    }
-    #menu-list h6{
-        letter-spacing: 7px;
-    }
-}
+        #menu-list h4 {
+            letter-spacing: 7px;
+        }
 
+        #menu-list h6 {
+            letter-spacing: 7px;
+        }
+    }
 }

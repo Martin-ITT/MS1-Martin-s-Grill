@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <meta name="keywords" content="takeaway, delivery, food, restaurant">
     <meta name="author" content="Martin Pavlin">
     <!-- BS4 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Overlock+SC&family=Overpass+Mono:wght@400;600&family=Ovo&family=Playfair+Display+SC:wght@400;700;900&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Overlock+SC&family=Overpass+Mono:wght@400;600&family=Ovo&family=Playfair+Display+SC:wght@400;700;900&family=Port+Lligat+Slab&display=swap"
+        rel="stylesheet">
+    <!-- JS - Subscribe btn -->
     <script src="./js/subscribe.js"></script>
     <link rel="stylesheet" href=" css/style.css">
     <title>Martin's homepage</title>
@@ -18,20 +22,21 @@
 </head>
 
 <body>
-      <!-- NAVBAR -->
-    <!-- Bootstrap navbars https://getbootstrap.com/docs/4.0/components/navbar/ -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html"><img src="./img/martinsLogo.png" alt="">The Martin's Grill</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mr-lg-3"><!-- mr-auto changed to mr-4 with ml-auto layout-->
+            <ul class="navbar-nav ml-auto mr-lg-3">
                 <li class="nav-item mr-lg-2">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown mr-lg-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="about.html">Our promise</a>
                         <a class="dropdown-item" href="about.html#about-team">Our team</a>
@@ -44,11 +49,11 @@
                 <li class="nav-item mr-lg-2">
                     <a class="nav-link" href="contact.html">Contact us</a>
                 </li>
-          </ul>          
+            </ul>
         </div>
     </nav>
-
-   <section id="menu-menu">
+    <!-- MAIN SECTION -->
+    <section id="menu-menu">
         <div id="menu-list">
             <h2>Menu</h2>
             <div>
@@ -89,21 +94,18 @@
                 </h6>
             </div>
         </div>
-   </section>
+    </section>
 
+    <!-- FOOTER -->
     <footer>
-        <!-- Copyright MDB https://mdbootstrap.com/docs/jquery/navigation/footer/-->
-        <!-- footer properties-->
         <div class="page-footer text-center bg-dark">
             <div class="container">
                 <div class="row align-items-center pt-2">
-                    <!-- sm to expand on screens from 576px -->
-                    <div class="col-md text-lg-left"> 
+                    <div class="col-md text-lg-left">
                         <button class="btn btn-light button-subscribe" onclick="openForm()">Subscribe</button>
-                            <div class="form-popup text-center" id="contactForm">
+                        <div class="form-popup text-center" id="contactForm">
                             <form name="subscribeForm" class="form-container" onsubmit="subscribeAlert()">
                                 <h1>Subscribe</h1>
-                                <!-- <label for="email"><b>Email</b></label> -->
                                 <input type="email" placeholder="please enter email" name="email" required>
                                 <button type="submit" class="btn">subscribe</button>
                                 <button type="button" class="btn cancel" onclick="closeForm()">not now</button>
@@ -111,25 +113,37 @@
                         </div>
                     </div>
                     <div class="col-md">
-                        <a class="navbar-brand" href="https://www.facebook.com" target="blank"><img src="./img/footer-pinterest Facebook White Icon, Facebook Icons, White Icons, Icon PNG and Vector with Transparent Background for Free Download.png" alt="Facebook"></a>
-                        <a class="navbar-brand" href="https://www.twitter.com" target="blank"><img src="./img/footer-pinterest Twitter White Icon, Twitter Icons, White Icons, Twitter Logo PNG and Vector with Transparent Background for Free Download.png" alt="Twitter"></a>
-                        <a class="navbar-brand" href="https://www.instagram.com" target="blank"><img src="./img/footer-pinterest Instagram White Icon Instagram Instagram Logo Free Logo Design Template, Instagram Icons, Logo Icons, White Icons PNG and Vector with Transparent Background for Free.png" alt="Instagram"></a>
+                        <a class="navbar-brand" href="https://www.facebook.com" target="blank"><img
+                                src="./img/footer-pinterest Facebook White Icon, Facebook Icons, White Icons, Icon PNG and Vector with Transparent Background for Free Download.png"
+                                alt="Facebook"></a>
+                        <a class="navbar-brand" href="https://www.twitter.com" target="blank"><img
+                                src="./img/footer-pinterest Twitter White Icon, Twitter Icons, White Icons, Twitter Logo PNG and Vector with Transparent Background for Free Download.png"
+                                alt="Twitter"></a>
+                        <a class="navbar-brand" href="https://www.instagram.com" target="blank"><img
+                                src="./img/footer-pinterest Instagram White Icon Instagram Instagram Logo Free Logo Design Template, Instagram Icons, Logo Icons, White Icons PNG and Vector with Transparent Background for Free.png"
+                                alt="Instagram"></a>
                     </div>
                     <div class="col-md text-lg-right" id="my-drop">
                         <a class="dropdown-item" href="about.html">About us</a>
-                        <a class="dropdown-item" href="https://www.jobs.ie" target="blank" onclick="openCareers()">Careers</a>
+                        <a class="dropdown-item" href="https://www.jobs.ie" target="blank"
+                            onclick="openCareers()">Careers</a>
                         <a class="dropdown-item" href="contact.html">Contact us</a>
                     </div>
                 </div>
-                <!-- Copyright MDB https://mdbootstrap.com/docs/jquery/navigation/footer/-->
-                <div class="footer-copyright text-light text-center"><p>© 2020 The Martin's Grill</p>
+                <div class="footer-copyright text-light text-center">
+                    <p>© 2020 The Martin's Grill</p>
                 </div>
-            </div> 
+            </div>
         </div>
     </footer>
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- BS4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
