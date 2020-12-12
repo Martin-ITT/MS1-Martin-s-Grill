@@ -211,19 +211,36 @@ An issue had been identified with responsive design on iPad pro where menu.html 
 <span id="deployment"></span>
 # 5. Deployment 🌀
 
-I developed this project in VS Code. Code was pushed using GitBash into GitHub repository in my account. Here are the steps to be followed:
+I developed this project in VS Code. Code was pushed using GitBash into GitHub repository in my account. This process is described below:
 
-1. Instal VS Code and Git. 
-1. Create a repository in on your GitHub account.
-1. Create a project in VS Code.
-1. Project / Folder needs to be linked with repository using GitBash.
-1. Code can now be written in VS Code
+1. Instal VS Code and Git on your computer.
+1. Set up a GitHub account create a new repository.
+1. Open GitBash and change the current directory to your local project.
+1. Use *$ git init -b main* to initialize this directory as your main branch.
+1. Code can now be written in VS Code. Changes must be saved before commiting to repository.
+1. Use *$ git add .* command to add all files into repository. Files can also be added separately by specifying their names in *git add* command. Files and locations to be ignored can be specified in .gitignore file. 
+1. Use *$ git commit -m "First commit"* to commit changes into the repository.
+1. Find and copy your GitHub repository URL. This can be found in GitHub repository's 'Quick Setup Page'.
+1. Use *$ git remote add origin 'remote repository URL'* to add the URL to your remote repository. This can be verified using *git remote -v* command.
+1. Use *$ git commit -m " 'what has been done or changed comment here' "* to commit changes to your local repository.
+1. Use *$ git push origin main* to push your commits into GitHub repository.
 1. Code needs to be commited and pushed regularly. This allows for version control.
-1. GitHub pages needs to activated. This can be found on repository settings page.
-1. In the source drop-down menu I selected the Master branch.
-1. Once published the site url will be displayed.
+1. You can use GitHub to host your website. In GitHub settings, scroll down to GutHub Pages. Select 'Master branch' in drop-down 'Source' menu. This display your website url.
+
+This is not the only way how you can work using local repository. You might find more suitable approach using GitPod or VS Code Git features. I would suggest to search for Git on Slack or Google. There are also tutorials available on YouTube.
 
 This code can be cloned or downloaded. Deployed version of this project is exactly the same as devolper version. This is located in master branch.
 
 <span id="credits"></span>
 # 6. Credits 💳
+## 6.1 Code Snippets 🧬
+
+- Navigation bar with BS4 template.
+    - https://getbootstrap.com/docs/4.0/components/navbar/
+
+- Footer with MDBootstrapcom template.
+    - https://mdbootstrap.com/docs/jquery/navigation/footer/
+
+- Subscribe form from w3school.com.
+    - https://www.w3schools.com/howto/howto_js_popup_form.asp
+
