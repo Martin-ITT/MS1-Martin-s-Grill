@@ -14,7 +14,7 @@
 # The Martin's Grill
 ## Code Institute - MS project 1
 --------------------------------------
-![The Martin's Grill](https://github.com/Martin-ITT/Martin-s-Grill/blob/main/img/Capture.jpg "The Martin's Grill")
+![The Martin's Grill](img/Capture.JPG "The Martin's Grill")
 
 *The Martin's Grill* is a website which will help a local restaurant to stand out from other competitors, to promote its business and attract new customers and update regular customers about new meals and offers.
 Most of my professional time I spent in food industry where I got inspiration for this project. I tried to put in all of my experience from different points of view - as a customer but also as restaurant manager and create an attractive website with a proffesional look.
@@ -84,13 +84,13 @@ At the beginning I identified color scheme using Adobe Colors https://color.adob
 
 ## Figma Wireframes
 ### Desktop
-![Martin's on Desktop](https://github.com/Martin-ITT/Martin-s-Grill/blob/main/img/Figma-desktop.JPG "Martin's on Desktop")
+![Martin's on Desktop](/img/Figma-desktop.JPG "Martin's on Desktop")
 
 ### Tablet
-![Martin's on Tablet](https://github.com/Martin-ITT/Martin-s-Grill/blob/main/img/figma-tablet.JPG "Martin's on Tablet")
+![Martin's on Tablet](/img/figma-tablet.JPG "Martin's on Tablet")
 
 ### Mobile
-![Martin's on Mobile](https://github.com/Martin-ITT/Martin-s-Grill/blob/main/img/figma-mobile.JPG "Martin's on Mobile")
+![Martin's on Mobile](/img/figma-mobile.JPG "Martin's on Mobile")
 
 <a href="#index">back to top ☝️</a>
 <span id="features"></span>
