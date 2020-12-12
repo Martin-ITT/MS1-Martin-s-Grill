@@ -7,6 +7,8 @@
 1. <a href="#deployment">Deployment 💥</a>
 1. <a href="#credits">Credits 👋</a>
 
+https://martin-itt.github.io/Martin-s-Grill/index.html
+
 <span id="project"></span>
 # The Martin's Grill
 ## Code Institute - MS project 1
@@ -83,13 +85,13 @@ Throughout various stages of my project development I changed the company name, 
 ![Martin's on Mobile](./img/figma-mobile.jpg "Martin's on Mobile")
 
 <span id="features"></span>
-# 2. Features
+# 2. Features 👍
 
-## 2.1 Navbar
+## 2.1 Navbar 🏄
 
 - Consistent and responsive navbar on all pages to make the navigation simple. It contains links to all pages and a dropdown menu for faster navigation on About Us page. Underlining links and a rotating logo with restaurant name to enhance design. This can be also used as home page link.
 
-## 2.2 Footer
+## 2.2 Footer ⚽
 
 - First section of footer with a subscribe button. New window pops up on click where users can enter their email address.
 
@@ -99,27 +101,27 @@ Throughout various stages of my project development I changed the company name, 
 
 - Copyright section at the bottom is closing the footer.
 
-## 2.3 Home page
+## 2.3 Home page 🎪
 
 The 'Home' - index page contains nice backround animation of two pictures and a Welcome greeting and Order button which slides in on opening the page. Welcome greeting has a shaddow for improved readability.
 
-## 2.4 About Us page
+## 2.4 About Us page 👫
 
 The 'About Us' page is divided into three sections each with different background. The first one describes the core elements and principles of a fine dining restaurant.
 The middle section presents the staff with pictures and brief description. In both sections pictures zoom in on hover.
 The last section is a carousel gallery which shows the interior, food preparation and products.
 
-## 2.5 Menu page
+## 2.5 Menu page 📑
 
 The 'Menu' page contains meals available in restaurant and the prices. Proffesional look was achieved using selelcted fonts and a transparent background.
 
-## 2.6 Contact Us page
+## 2.6 Contact Us page 📧
 
 The 'Contact Us' page has a detailed information - a phone number,email, address and opening hours. This is followed by a Google map window with restaurant location.
 Page also contains Contact us form with required fields and a simple email verification.
 The Contact Us form changes to a booking form when booking checkbox is selected. Date and time inputs appear and subject field is removed.
 
-## 2.7 Opportunities for additional features
+## 2.7 Opportunities for additional features 💰
 
 The following ideas were identified:
 
@@ -131,9 +133,11 @@ The following ideas were identified:
 
 - section with reviews
 
+These features will need more time and might be implemented later while progressing through the course and learning new skills.
+
 <span id="technologies"></span>
-# 3. Used technologies
-## 3.1 Languages
+# 3. Used technologies 🔌
+## 3.1 Languages 📢
 
 - HTML/HTML5
 provides the basic structure of sites
@@ -144,23 +148,23 @@ provides colors, layouts and fonts for HTML elements
 - JavaScript
 programming language which enables interactive web pages
 
-## 3.2 Frameworks
+## 3.2 Frameworks ➿
 
 - Bootstrap 4
 great tool which allows for a quick and responsive design. Bootstrap was used to design navbar, footer.
 About Us and Contact Us pages demonstrate the use of its Flex / Grid systems. 
 
-## 3.3 IDE's & Hosting
+## 3.3 IDE's & Hosting 💻
 
 -  Visual Studio Code - README.md and all code was written in VS Code.
 
-- Git Bash - used for version control.
+- Git with GitBash - used for version control.
 
 - GitHub - hosting service to save the project in a repository.
 
-
-# 4. Testing
-## 4.1 Testing tools
+<span id="testing"></span>
+# 4. Testing 💉
+## 4.1 Testing tools 💊
 
 - Chrome DevTools - used to see responsive and mobile design previews, applying and optimising CSS rules and targeting HTML elements and their behaviour.
 
@@ -170,7 +174,7 @@ About Us and Contact Us pages demonstrate the use of its Flex / Grid systems.
  - OnePlus 6T
 Final results for smallest screen width and functions were checked on OnePlus 6T device.
 
-## 4.2 Testing User Stories
+## 4.2 Testing User Stories 📉
 
 Following checks were caried out to see if all requirements were met.
 
@@ -200,18 +204,26 @@ Following checks were caried out to see if all requirements were met.
 - Booking feature:
     - Booking available through interactive Contact Us form.
 
-## 4.3 Bugs and issues
+## 4.3 Bugs and issues 🐛
 
-# 5. Deployment
+An issue had been identified with responsive design on iPad pro where menu.html page was only taking half of the screen size height. This was resolved using VH units in css stylesheet.
 
-I developed this project in VS Code. Code was pushed using GitBash into GitHub repository in my account. Following steps needs to be followed:
+<span id="deployment"></span>
+# 5. Deployment 🌀
 
-1. Create a repository inside GitHub
-2. Create a project in VS Code
-3. Project / Folder needs to be linked with repository using GitBash.
-4. Code can now be written in VS Code
-5. Code needs to be commited and pushed regularly. This allows for version control.
+I developed this project in VS Code. Code was pushed using GitBash into GitHub repository in my account. Here are the steps to be followed:
 
-Deployed version of this project is exactly the same as devolper version. This is located in master branch.
+1. Instal VS Code and Git. 
+1. Create a repository in on your GitHub account.
+1. Create a project in VS Code.
+1. Project / Folder needs to be linked with repository using GitBash.
+1. Code can now be written in VS Code
+1. Code needs to be commited and pushed regularly. This allows for version control.
+1. GitHub pages needs to activated. This can be found on repository settings page.
+1. In the source drop-down menu I selected the Master branch.
+1. Once published the site url will be displayed.
 
-# 6. Credits
+This code can be cloned or downloaded. Deployed version of this project is exactly the same as devolper version. This is located in master branch.
+
+<span id="credits"></span>
+# 6. Credits 💳

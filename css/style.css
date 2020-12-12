@@ -211,7 +211,7 @@ opacity: 1;
 
 /* main part with background animation*/
 #home-body {
-    min-height: 726px; /*optimalized height for iphone X 375*812*/
+    min-height: 90vh;
     -webkit-animation: animate-hero 10s ease-in-out infinite;
     animation: animate-hero 10s ease-in-out infinite; /* background animation - animation not working on ipad*/
     background-size: cover; /* size of background animation*/
@@ -244,7 +244,7 @@ opacity: 1;
 #home-body div{
     width: 60%; /* ideal size of welcome text - checked for responsive design - effectign h2&h4 position on screen */
     text-align: center;
-    padding-top: 240px; /* text pushed down - checked for responsive design*/
+    padding-top: 30vh; /* text pushed down - checked for responsive design*/
     text-shadow: 0 0 5px rgba(255,255,255,.8), 0 0 5px rgba(255,255,255,.8); /* text shadow for easier readability */
     }  
 
@@ -413,7 +413,6 @@ transform: translateY(0);
 
 /* third section - gallery*/
 #about-gallery{
-    /*min-height: 300px;*/
     padding-bottom: 1em;
     background-image: url(../img/bg-lq-decor-background-pexels-pixabay-276514-min.png);
     background-size: cover;
@@ -454,7 +453,7 @@ transform: translateY(0);
     width: 80%;
     height: 100%;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 50px;
     text-align: center;
     color: /*#BE9E6A*/ #9a9da0;
     background-color: rgba(0,0,0,0.5);
@@ -478,7 +477,6 @@ transform: translateY(0);
 /* ----------------------------------------------- contact.html ------------------------------------------------- */
 /* whole section */
 #contact{
-    /* max-height: 1350px; */
     padding-bottom: 1em;
     background-image: url(../img/bg-lq-steak-gonzalo-guzman-3997609.png);
     background-size: cover;
@@ -610,6 +608,9 @@ transform: translateY(0);
     }
 
     /* ------------- menu.html -------------- */
+    #menu-menu{
+        height: 800px;
+    }
     /*section padding*/
     #menu-list{
         padding-top: 50px;
@@ -638,11 +639,8 @@ transform: translateY(0);
     }
 
     /* ----------------- index.html ------------------ */
-    #home-body {
-        height: 814px; /* size for iPad */
-    }
+   
     #home-body #welcome-text {
-        padding-top: 280px;
         letter-spacing: 5px;
         line-height: 60px;
     } 
@@ -675,9 +673,9 @@ transform: translateY(0);
     }
     
     /* ---------------- menu.html ----------------------- */
-    #menu-menu{
-        height: 814px;
-    }
+    /*#menu-menu{
+        height: 90vh;
+    }*/
     /* font styles */
     #menu-list h2{
         font-size: 2em;
@@ -699,16 +697,26 @@ transform: translateY(0);
         padding-top: 10px;
     }
 }
+/* ------------------------screens larger than 1024 ------- */
+@media(min-width: 1020px){
+    /* ------------ menu.html ------------------ */
+    #menu-menu{
+        height: 1156px;
+    }
+    #menu-list{
+        padding-top: 150px;
+    }
+    /* ----------- contact.html --------------- */
+    #contact{
+        height: 1156px;
+    }
 
+}
 
 /* ----------------------- screens larger than 1200px ------------------------ */
 @media(min-width: 1200px){
    
     /* ------------------- index.html -------------------- */
-    #home-body {
-        height: 727px;
-        background-position: 0% 70%; 
-    }
     #home-body div{
         width: 50%;
     }
@@ -752,7 +760,10 @@ transform: translateY(0);
 
      /* ---------------- menu.html ----------------------- */
      #menu-menu{
-        height: 840px;
+        height: 90vh;
+    }
+    #menu-list{
+        padding-top: 3vh;
     }
     /* font styles */
     #menu-list h2{
@@ -770,9 +781,6 @@ transform: translateY(0);
 /* ----------------------- screens larger than 1600px ------------------------ */
 @media(min-width: 1600px){  
     /* --------------- index.html ------------------------- */
-    #home-body {
-        height: 841px;
-    }
     #home-body #welcome-text h2 {
         font-size: 3em;
         letter-spacing: 10px;
