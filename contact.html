@@ -91,7 +91,7 @@
         <hr>
         <div id="contact-form">
             <div class="container">
-                <form name="contact-form" onsubmit="formSubmitAlert()">
+                <form name="contact-form" onsubmit="formSubmitAlert()" method="post" action="https://formdump.codeinstitute.net/">
                     <div class="container text-center text-white">
                         <h2>Contact us</h2>
                     </div>
@@ -99,20 +99,20 @@
                         <label>
                             <p>Name</p>
                         </label>
-                        <input type="text" class="form-control" placeholder="add name" required>
+                        <input type="text" class="form-control" name="name" placeholder="add name" required>
                     </div>
 
                     <div class="form-group">
                         <label>
                             <p>Email</p>
                         </label>
-                        <input type="email" class="form-control" placeholder="add email" required>
+                        <input type="email" class="form-control" name="email" placeholder="add email" required>
                         <small id="emailHelp" class="form-text text-muted">
                             <p>We'll never share your email address.</p>
                         </small>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="bookingCheckbox"
+                        <input class="form-check-input" type="checkbox"  name="bookingCheckbox" id="bookingCheckbox"
                             onclick="bookingFunction()">
                         <label class="form-check-label" for="bookingCheckbox">
                             <p>Book a table</p>
@@ -124,7 +124,7 @@
                                 <label>
                                     <p>Date</p>
                                 </label>
-                                <input type="date" class="form-control" placeholder="subject">
+                                <input type="date" class="form-control" name="date" placeholder="subject">
                             </div>
                         </div>
                         <div class="col-3">
@@ -132,7 +132,7 @@
                                 <label>
                                     <p>Time</p>
                                 </label>
-                                <input type="time" class="form-control" placeholder="subject">
+                                <input type="time" class="form-control" name="time" placeholder="subject">
                             </div>
                         </div>
                     </div>
@@ -140,20 +140,20 @@
                         <label>
                             <p>Subject</p>
                         </label>
-                        <input type="text" class="form-control" placeholder="subject">
+                        <input type="text" class="form-control" name="subject" placeholder="subject">
                     </div>
                     <div class="form-group">
                         <label>
                             <p>Message</p>
                         </label>
-                        <textarea type="text" class="form-control" placeholder="add message" required></textarea>
+                        <textarea type="text" class="form-control" name="message" placeholder="add message" required></textarea>
                     </div>
 
                     <div class="form-group" id="booking-hide" style="display: block">
                         <label>
                             <p>Do you need reply?</p>
                         </label>
-                        <select class="form-control">
+                        <select class="form-control" name="reply">
                             <option value="none">
                                 <p>please select...</p>
                             </option>
@@ -181,9 +181,13 @@
                     <div class="col-md text-lg-left">
                         <button class="btn btn-light button-subscribe" onclick="openForm()">Subscribe</button>
                         <div class="form-popup text-center" id="contactForm">
-                            <form name="subscribeForm" class="form-container" onsubmit="subscribeAlert()">
+                            <form name="subscribeForm" class="form-container" onsubmit="subscribeAlert()" method="post" action="https://formdump.codeinstitute.net/">
                                 <h1>Subscribe</h1>
                                 <input type="email" placeholder="please enter email" name="email" required>
+                                <div class="form-check">
+                                    <label><input type="checkbox" class="form-check-input" required>I agree to terms &
+                                        conditions.</label>
+                                </div>
                                 <button type="submit" class="btn">subscribe</button>
                                 <button type="button" class="btn cancel" onclick="closeForm()">not now</button>
                             </form>

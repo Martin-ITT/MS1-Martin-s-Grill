@@ -510,7 +510,6 @@ footer p {
     text-align: center;
     background-image: url(../img/bg-lq-steak-meat-1259012-pxhere.jpg);
 }
-
 /* menu container */
 #menu-list {
     width: 80%;
@@ -521,7 +520,6 @@ footer p {
     color: #9a9da0;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 /* menu text style */
 #menu-list h2 {
     font-size: 1.3em;
@@ -858,7 +856,7 @@ footer p {
         }
 
         #menu-list {
-            padding-top: 3vh;
+            padding-top: 2vh;
         }
 
         #menu-list h2 {
