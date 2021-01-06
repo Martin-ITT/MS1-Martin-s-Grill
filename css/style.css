@@ -377,17 +377,16 @@ footer p {
 #about-top-btn {
     display: none;
     position: fixed;
-    top: 20px;
-    right: 5px;
-    z-index: 99;
-    border: none;
+    bottom: 20px;
+    right: 10px;
+    z-index: 9;
     outline: none;
-    background-color: #343a40;
-    color: #f8f9fa;
+    background-color: #f8f9fa;
+    color: #343a40;
     cursor: pointer;
     padding: 5px;
     border-radius: 5px;
-    font-size: 9px;
+    font-size: 12px;
 }
 
 #about-top-btn:hover {
@@ -636,9 +635,8 @@ footer p {
 
     /* ------------ about.html --------------- */
     #about-top-btn {
-        top: 30px;
+        bottom: 20px;
         right: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
         border-radius: 10px;
         font-size: 12px;
