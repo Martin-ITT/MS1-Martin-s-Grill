@@ -1,8 +1,8 @@
 /* with a help of w3schools tutorials - querySelectorAll & display text with checkbox */
 function bookingFunction() {
     var checkBox = document.querySelector("#bookingCheckbox");
-    var text = document.querySelectorAll("#booking-display");
-    var hide = document.querySelectorAll("#booking-hide");
+    var text = document.querySelectorAll(".booking-display");
+    var hide = document.querySelectorAll(".booking-hide");
     var i;
     if (checkBox.checked === true){
         for (i = 0; i < text.length; i++) {

@@ -252,7 +252,7 @@ footer p {
 /* --------------------------------------------------- index.html --------------------------------------------- */
 /* main part with background animation*/
 #home-body {
-    min-height: 90vh;
+    min-height: 86vh;
     animation: animate-hero 10s ease-in-out infinite;
     background-size: cover;
     background-position: 30% 50%;
@@ -328,6 +328,9 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+#home-body a:hover{
+    background-color: #991111;
 }
 
 /* order now button animated*/
@@ -489,6 +492,7 @@ footer p {
 /* whole section */
 #menu-menu {
     height: 726px;
+    min-height: 86vh;
     background-size: cover;
     text-align: center;
     background-image: url(../img/bg-lq-steak-meat-1259012-pxhere.jpg);
@@ -524,6 +528,7 @@ footer p {
 /* ----------------------------------------------- contact.html ------------------------------------------------- */
 /* whole section */
 #contact {
+    min-height: 86vh;
     padding-bottom: 1em;
     background-image: url(../img/bg-lq-steak-gonzalo-guzman-3997609.png);
     background-size: cover;
@@ -556,7 +561,8 @@ footer p {
     font-family: 'Playfair Display SC', Copperlate, Tahoma;
 }
 
-#contact-form p {
+#contact-form label,
+#contact-form #emailHelp {
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -567,7 +573,7 @@ footer p {
 #contact-form input[type=email],
 #contact-form input[type=date],
 #contact-form input[type=time],
-#contact-form textarea[type=text],
+#contact-form textarea,
 #contact-form select {
     border: none;
     border-bottom: 1px solid #ffffff;
@@ -604,7 +610,7 @@ footer p {
 
     #home-body #welcome-text h2 {
         font-size: 1.8em;
-        font-weight: 550;
+        font-weight: 500;
     }
 
     #home-body #welcome-text h4 {
@@ -687,7 +693,7 @@ footer p {
         font-size: .9em;
         font-weight: 700;
     }
-   
+}   
     /* ----------------------- screens larger than 768px ------------------------ */
     @media(min-width: 768px) {
 
@@ -752,6 +758,7 @@ footer p {
             font-size: 1.1em;
             letter-spacing: 3px;
         }
+    }
 
     /* ------------------------screens larger than 1024 ------- */
     @media(min-width: 1020px) {
@@ -785,7 +792,6 @@ footer p {
         #contact {
             height: 1156px;
         }
-
     }
 
     /* ----------------------- screens larger than 1200px ------------------------ */
@@ -864,7 +870,6 @@ footer p {
         #menu-list h6 {
             letter-spacing: 5px;
         }
-
     }
 
     /* ----------------------- screens larger than 1600px ------------------------ */
@@ -905,4 +910,3 @@ footer p {
             letter-spacing: 7px;
         }
     }
-}
