@@ -8,6 +8,7 @@ function openForm() {
  function closeForm() {
    document.getElementById("contactForm").style.display = "none";
  }
+
  /* pop up alert on submision */
  function subscribeAlert() {
     alert("Thank you for subscribing!");

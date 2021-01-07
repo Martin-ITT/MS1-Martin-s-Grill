@@ -28,26 +28,10 @@
 a:hover {
     cursor: context-menu;
 }
-
-/* insert content before a element
-a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-*/
 /* keep same cursor on the navbar list - blinking cursor problem*/
 header .nav-item li:hover {
     cursor: context-menu;
 }
-
 /* keep same cursor on buttons*/
 .btn:not(:disabled):not(.disabled) {
     cursor: context-menu;
@@ -80,7 +64,7 @@ nav .dropdown-item {
 /* navbar fonts */
 .navbar a {
     font-family: 'Overlock SC', Copperlate, Tahoma;
-    font-size: 1.4em;
+    font-size: 1.2em;
     /* underline animation */
     position: relative;
     text-decoration: none;
@@ -212,7 +196,7 @@ footer p {
 .form-container {
     max-width: 300px;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* 90%-width input fields */
@@ -221,7 +205,7 @@ footer p {
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
-    background: rgba(0, 0, 0, 0.5);
+    background:  #343a40;
     color: white;
 }
 
@@ -292,7 +276,7 @@ footer p {
 #home-body div {
     width: 60%;
     text-align: center;
-    padding-top: 30vh;
+    padding-top: 25vh;
     text-shadow: 0 0 5px rgba(255, 255, 255, .8), 0 0 5px rgba(255, 255, 255, .8);
 }
 
@@ -553,10 +537,9 @@ footer p {
     font-family: 'Ovo', Copperlate, Tahoma;
 }
 
-/* map container */
-#map {
-    min-width: 300px;
-    height: 300px;
+/* map img */
+#map img {
+    width: 90%;
     border-radius: 5px;
 }
 
@@ -704,7 +687,7 @@ footer p {
         font-size: .9em;
         font-weight: 700;
     }
-
+   
     /* ----------------------- screens larger than 768px ------------------------ */
     @media(min-width: 768px) {
 
@@ -769,12 +752,6 @@ footer p {
             font-size: 1.1em;
             letter-spacing: 3px;
         }
-
-        /* ---------------- contact.html --------------------- */
-        #contact-map {
-            padding-top: 10px;
-        }
-    }
 
     /* ------------------------screens larger than 1024 ------- */
     @media(min-width: 1020px) {
